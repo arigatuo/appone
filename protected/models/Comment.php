@@ -6,9 +6,8 @@
  * The followings are the available columns in table 'qfa_comment':
  * @property string $comment_id
  * @property string $item_id
- * @property string $comment_text
- * @property string $comment_user_head
- * @property string $comment_user_id
+ * @property string $comment_text_id
+ * @property string $comment_head_id
  */
 class Comment extends CActiveRecord
 {
@@ -38,12 +37,11 @@ class Comment extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('item_id, comment_text, comment_user_head, comment_user_id', 'required'),
-			array('item_id, comment_user_id', 'length', 'max'=>20),
-			array('comment_user_head', 'length', 'max'=>255),
+			array('item_id, comment_text_id, comment_head_id', 'required'),
+			array('item_id, comment_text_id, comment_head_id', 'length', 'max'=>20),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('comment_id, item_id, comment_text, comment_user_head, comment_user_id', 'safe', 'on'=>'search'),
+			array('comment_id, item_id, comment_text_id, comment_head_id', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -66,9 +64,8 @@ class Comment extends CActiveRecord
 		return array(
 			'comment_id' => 'Comment',
 			'item_id' => 'Item',
-			'comment_text' => 'Comment Text',
-			'comment_user_head' => 'Comment User Head',
-			'comment_user_id' => 'Comment User',
+			'comment_text_id' => 'Comment Text',
+			'comment_head_id' => 'Comment Head',
 		);
 	}
 
@@ -85,9 +82,8 @@ class Comment extends CActiveRecord
 
 		$criteria->compare('comment_id',$this->comment_id,true);
 		$criteria->compare('item_id',$this->item_id,true);
-		$criteria->compare('comment_text',$this->comment_text,true);
-		$criteria->compare('comment_user_head',$this->comment_user_head,true);
-		$criteria->compare('comment_user_id',$this->comment_user_id,true);
+		$criteria->compare('comment_text_id',$this->comment_text_id,true);
+		$criteria->compare('comment_head_id',$this->comment_head_id,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

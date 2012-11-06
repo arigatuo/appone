@@ -59,12 +59,15 @@ return array(
 			'username' => 'root',
 			'password' => '',
 			'charset' => 'utf8',
-            'enableParamLogging'=>true
-		),
+            'enableParamLogging'=>true,
+            //'schemaCachingDuration'=>3600, //结构缓存
+        ),
+
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>'site/error',
 		),
+
 		'log'=>array(
 			'class'=>'CLogRouter',
 			'routes'=>array(
@@ -80,9 +83,18 @@ return array(
 				),
 			),
 		),
+
         'session' => array(
             'timeout' => 86400,
             'autoStart' => true,
+        ),
+
+        'cache'=>array(
+            //memcache
+            'class'=>'CMemCache',
+            'servers'=>array(
+                array('host'=>'127.0.0.1', 'port'=>11211, 'weight'=>100),
+            ),
         ),
 	),
 

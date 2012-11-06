@@ -26,12 +26,8 @@ class AjaxController extends Controller
 	{
 		return array(
 				array('allow',
-						'actions'=>array('Uploadimg'),
-						'users'=>array('@'),					
-					),
-				array('deny',  // deny all users
 						'users'=>array('*'),
-				),
+					),
 				/*
 				array('allow',  // allow all users to perform 'index' and 'view' actions
 						'actions'=>array('index','view'),
@@ -64,7 +60,7 @@ class AjaxController extends Controller
 		}
 		
 		$allowedExtensions = array("jpg");//array("jpg","jpeg","gif","exe","mov" and etc...
-		$sizeLimit = 10 * 1024 * 1024;// maximum file size in bytes
+		$sizeLimit = 1 * 1024 * 1024;// maximum file size in bytes
 		$uploader = new qqFileUploader($allowedExtensions, $sizeLimit);
 		$result = $uploader->handleUpload($folder);
 		$result['folder'] = $folder;
@@ -75,4 +71,5 @@ class AjaxController extends Controller
 		
 		echo $return;// it's array
 	}
+
 }

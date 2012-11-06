@@ -134,6 +134,15 @@ class Item extends CActiveRecord
 
     public function afterFind(){
         $this->endtime = date("Y-m-d H:i:s", $this->endtime);
+        return parent::afterFind();
+    }
+
+    public function afterSave(){
+        if($this->getIsNewRecord()){
+            //生成评论
+            Helper::makeMultiComments($this->item_id);
+        }
+        return parent::afterSave();
     }
 
 }

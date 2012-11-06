@@ -31,4 +31,71 @@ class Helper extends CController
 		}
 		return $result;
 	}
+
+    //生成随机头像的随机评论
+    public static function getRandomComments($itemId){
+        if(!empty($itemId) && is_numeric($itemId)){
+            ;
+        }else{
+            throw new HttpException("404");
+        }
+
+        $commentTextCount = CommentText::model()->count();
+        $commentHeadCount = CommentHead::model()->count();
+
+        $commentTextRandId = mt_rand(0, $commentTextCount);
+        $commentHeadRandId = mt_rand(0, $commentHeadCount);
+
+        $criteria = new CDbCriteria;
+        $criteria->addCondition("comment_text_id>={$commentTextRandId}");
+        $criteria->select = 'comment_text_id';
+        $criteria->limit = 1;
+        $criteria->order = "comment_text_id asc";
+
+        $rs = CommentText::model()->find($criteria);
+        $theCommentTextId = $rs->getAttribute("comment_text_id");
+        unset($rs);
+
+        $criteria = new CDbCriteria;
+        $criteria->addCondition("comment_head_id>={$commentHeadRandId}");
+        $criteria->select = 'comment_head_id';
+        $criteria->limit = 1;
+        $criteria->order = "comment_head_id asc";
+
+        $rs = CommentHead::model()->find($criteria);
+        $theCommentHeadId = $rs->getAttribute("comment_head_id");
+
+        if(!empty($theCommentHeadId) && !empty($theCommentTextId)){
+            $newComment = new Comment;
+            $newComment->attributes = array(
+                    'item_id' => $itemId,
+                    'comment_text_id' => $theCommentTextId,
+                    'comment_head_id' => $theCommentHeadId,
+            );
+            if($newComment->save()){
+                ;
+            }else{
+                throw new HttpException("404");
+            }
+        }
+    }
+
+    //生成多条随机评论
+    public static function makeMultiComments($itemId, $time=3){
+        for($i = 0; $i < $time; $i++){
+            self::getRandomComments($itemId);
+        }
+    }
+
+    public static function getItemCacheFav($itemId){
+        $cacheKey = md5(__FUNCTION__.$itemId);
+        $cacheTime = 24 * 3600;
+        $cacheVal = Yii::app()->cache->get($cacheKey);
+
+        if($cacheVal != null){
+;
+        }else{
+;
+        }
+    }
 }

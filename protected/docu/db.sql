@@ -38,15 +38,42 @@ DROP TABLE IF EXISTS `qfa_comment`;
 CREATE TABLE `qfa_comment` (
   `comment_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT COMMENT '评论id',
   `item_id` bigint(20) unsigned NOT NULL COMMENT '试用品id',
-  `comment_text` text,
-  `comment_user_head` varchar(255) CHARACTER SET latin1 NOT NULL COMMENT '头像url',
-  `comment_user_id` bigint(20) unsigned NOT NULL COMMENT '用户id',
+  `comment_text_id` bigint(20) NOT NULL COMMENT '文字id',
+  `comment_head_id` bigint(20) NOT NULL COMMENT '头像id',
   PRIMARY KEY (`comment_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 CHECKSUM=1 DELAY_KEY_WRITE=1 ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8 CHECKSUM=1 DELAY_KEY_WRITE=1 ROW_FORMAT=DYNAMIC;
 
 /*Data for the table `qfa_comment` */
 
-insert  into `qfa_comment`(`comment_id`,`item_id`,`comment_text`,`comment_user_head`,`comment_user_id`) values (2,213,'f放到的随碟附送','3213',321);
+insert  into `qfa_comment`(`comment_id`,`item_id`,`comment_text_id`,`comment_head_id`) values (3,3,2,5),(4,3,1,1),(7,3,1,4),(11,6,5,1),(12,6,5,1),(13,6,1,2);
+
+/*Table structure for table `qfa_comment_head` */
+
+DROP TABLE IF EXISTS `qfa_comment_head`;
+
+CREATE TABLE `qfa_comment_head` (
+  `comment_head_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT COMMENT '评论头像id',
+  `comment_head` varchar(255) NOT NULL,
+  PRIMARY KEY (`comment_head_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+
+/*Data for the table `qfa_comment_head` */
+
+insert  into `qfa_comment_head`(`comment_head_id`,`comment_head`) values (1,'upload/20121106/bd5b4d05e1c0f5cc8c0d2f0d0a248bfe.jpg'),(2,'upload/20121106/d58b89f442dbb6f24c02e5bcdcac81fc.jpg'),(3,'upload/20121106/1143e4c9e25e6d7e00be69bbf00a0311.jpg'),(4,'upload/20121106/7115c4a5a6268144f4d24f45311075b4.jpg'),(5,'upload/20121106/cf26df8be6ad2347015a33631bdf9ccf.jpg'),(6,'upload/20121106/7e3a6f22cabf48df84e76b1c43fd3d9e.jpg');
+
+/*Table structure for table `qfa_comment_text` */
+
+DROP TABLE IF EXISTS `qfa_comment_text`;
+
+CREATE TABLE `qfa_comment_text` (
+  `comment_text_id` bigint(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '评论文字id',
+  `comment_text` varchar(255) NOT NULL COMMENT '评论文字',
+  PRIMARY KEY (`comment_text_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 CHECKSUM=1 DELAY_KEY_WRITE=1 ROW_FORMAT=DYNAMIC;
+
+/*Data for the table `qfa_comment_text` */
+
+insert  into `qfa_comment_text`(`comment_text_id`,`comment_text`) values (1,'这个不错哦'),(2,'很赞啊'),(3,'赞啊'),(4,'不错， 喜欢这个'),(5,'可以的啊');
 
 /*Table structure for table `qfa_item` */
 
@@ -67,12 +94,27 @@ CREATE TABLE `qfa_item` (
   `already_buy` int(10) unsigned DEFAULT '0' COMMENT '已购买人数',
   `photo` varchar(255) DEFAULT NULL,
   `is_top` tinyint(1) unsigned NOT NULL DEFAULT '0' COMMENT '是否推荐',
+  `type_id` int(10) unsigned NOT NULL COMMENT '类型id',
   PRIMARY KEY (`item_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 CHECKSUM=1 DELAY_KEY_WRITE=1 ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 CHECKSUM=1 DELAY_KEY_WRITE=1 ROW_FORMAT=DYNAMIC;
 
 /*Data for the table `qfa_item` */
 
-insert  into `qfa_item`(`item_id`,`price`,`special_price`,`title`,`endtime`,`is_free`,`category_id`,`pieces`,`description`,`share_time`,`fav_time`,`already_buy`,`photo`,`is_top`) values (2,5.5,10.5,'标题fjsdlfj',123213,'1',10,0,'',0,0,0,'3213123',0),(3,0,0,'fdsf',123213,'1',10,0,'',0,0,0,'fdsdfsdaf',1);
+insert  into `qfa_item`(`item_id`,`price`,`special_price`,`title`,`endtime`,`is_free`,`category_id`,`pieces`,`description`,`share_time`,`fav_time`,`already_buy`,`photo`,`is_top`,`type_id`) values (5,0,0,'3213123',1352937600,'1',11,0,'',0,0,0,'http://www.baidu.com/img/baidu_jgylogo3.gif',0,2),(6,0,0,'32313',1352937600,'1',10,0,'',0,0,0,'3213123',0,1);
+
+/*Table structure for table `qfa_type` */
+
+DROP TABLE IF EXISTS `qfa_type`;
+
+CREATE TABLE `qfa_type` (
+  `typeid` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '类型id',
+  `typename` varchar(255) DEFAULT NULL COMMENT '类型名',
+  PRIMARY KEY (`typeid`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+/*Data for the table `qfa_type` */
+
+insert  into `qfa_type`(`typeid`,`typename`) values (1,'免费'),(2,'10元包邮');
 
 /*Table structure for table `qfa_user` */
 

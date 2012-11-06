@@ -3582,3 +3582,65 @@ Stack trace:
 REQUEST_URI=/appone/index.php?r=bg/commentHead/create
 HTTP_REFERER=http://www.myapp.com/appone/index.php?r=bg/commentHead/admin
 ---
+2012/11/06 09:29:11 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in D:\svn\wamp\www\yii\yii\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 D:\svn\wamp\www\yii\yii\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\svn\wamp\www\yii\yii\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\svn\wamp\www\yii\yii\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\svn\wamp\www\yii\yii\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\svn\wamp\www\yii\yii\web\CController.php(292): CFilterChain->run()
+#6 D:\svn\wamp\www\yii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): CController->run('admin')
+#8 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController('bg/comment/admi...')
+#9 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\svn\wamp\www\yii\appone\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/appone/index.php?r=bg/comment/admin
+HTTP_REFERER=http://www.myapp.com/appone/index.php?r=bg/comment/
+---
+2012/11/06 09:57:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "text" 动作.' in D:\svn\wamp\www\yii\yii\web\CController.php:484
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\web\CController.php(271): CController->missingAction('text')
+#1 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): CController->run('text')
+#2 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController('site/text')
+#3 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\svn\wamp\www\yii\appone\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/appone/index.php?r=site/text
+---
+2012/11/06 09:58:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "test" 动作.' in D:\svn\wamp\www\yii\yii\web\CController.php:484
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\web\CController.php(271): CController->missingAction('test')
+#1 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): CController->run('test')
+#2 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController('site/test')
+#3 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\svn\wamp\www\yii\appone\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/appone/index.php?r=site/test
+---
+2012/11/06 09:58:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "test" 动作.' in D:\svn\wamp\www\yii\yii\web\CController.php:484
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\web\CController.php(271): CController->missingAction('test')
+#1 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): CController->run('test')
+#2 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController('Site/test')
+#3 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\svn\wamp\www\yii\appone\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/appone/index.php?r=Site/test
+---
+2012/11/06 10:07:46 [error] [exception.CDbException] exception 'CDbException' with message 'active record 由于是新的, 无法被更新.' in D:\svn\wamp\www\yii\yii\db\ar\CActiveRecord.php:1112
+Stack trace:
+#0 D:\svn\wamp\www\yii\appone\protected\components\Helper.php(70): CActiveRecord->saveAttributes(Array)
+#1 D:\svn\wamp\www\yii\appone\protected\controllers\SiteController.php(113): Helper::getRandomComments('3')
+#2 D:\svn\wamp\www\yii\yii\web\actions\CInlineAction.php(50): SiteController->actionTest()
+#3 D:\svn\wamp\www\yii\yii\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\svn\wamp\www\yii\yii\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\svn\wamp\www\yii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): CController->run('test')
+#7 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController('Site/test')
+#8 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\svn\wamp\www\yii\appone\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/appone/index.php?r=Site/test
+---
