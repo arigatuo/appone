@@ -36,7 +36,7 @@ class Category extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('category_name, ctime', 'required'),
+			array('category_name', 'required'),
 			array('category_name', 'length', 'max'=>50),
 			array('ctime', 'length', 'max'=>10),
 			// The following rule is used by search().
@@ -87,4 +87,9 @@ class Category extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+
+    public function beforeSave(){
+        $this->ctime = time();
+        return parent::beforeSave();
+    }
 }

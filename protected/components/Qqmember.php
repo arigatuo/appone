@@ -122,7 +122,6 @@ class Qqmember extends CController
                     );
                     $lastInsertId = $newUser->save();
 
-
                     $userInfo = array(
                         'userid' => $lastInsertId,
                         'nickname' => $nickname,

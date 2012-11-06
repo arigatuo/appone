@@ -16,9 +16,9 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'ctime'); ?>
+		<?php /* echo $form->labelEx($model,'ctime'); ?>
 		<?php echo $form->textField($model,'ctime',array('size'=>10,'maxlength'=>10)); ?>
-		<?php echo $form->error($model,'ctime'); ?>
+		<?php echo $form->error($model,'ctime');*/ ?>
 	</div>
 
 	<div class="row buttons">

@@ -2428,3 +2428,261 @@ Stack trace:
 REQUEST_URI=/appone/index.php?r=bg/category/admin
 HTTP_REFERER=http://www.myapp.com/appone/index.php?r=bg/item/admin
 ---
+2012/11/06 04:19:55 [error] [exception.CException] exception 'CException' with message '别名 "extentions.timepicker.timepicker" 是无效的. 请确定它指向一个已存在的目录或文件.' in D:\svn\wamp\www\yii\yii\YiiBase.php:343
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\web\CWidgetFactory.php(147): YiiBase::import('extentions.time...', true)
+#1 D:\svn\wamp\www\yii\yii\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(ItemController), 'extentions.time...', Array)
+#2 D:\svn\wamp\www\yii\yii\web\CBaseController.php(173): CBaseController->createWidget('extentions.time...', Array)
+#3 D:\svn\wamp\www\yii\appone\protected\views\bg\item\_form.php(60): CBaseController->widget('extentions.time...', Array)
+#4 D:\svn\wamp\www\yii\yii\web\CBaseController.php(127): require('D:\svn\wamp\www...')
+#5 D:\svn\wamp\www\yii\yii\web\CBaseController.php(96): CBaseController->renderInternal('D:\svn\wamp\www...', Array, true)
+#6 D:\svn\wamp\www\yii\yii\web\CController.php(870): CBaseController->renderFile('D:\svn\wamp\www...', Array, true)
+#7 D:\svn\wamp\www\yii\appone\protected\views\bg\item\create.php(15): CController->renderPartial('_form', Array)
+#8 D:\svn\wamp\www\yii\yii\web\CBaseController.php(127): require('D:\svn\wamp\www...')
+#9 D:\svn\wamp\www\yii\yii\web\CBaseController.php(96): CBaseController->renderInternal('D:\svn\wamp\www...', Array, true)
+#10 D:\svn\wamp\www\yii\yii\web\CController.php(870): CBaseController->renderFile('D:\svn\wamp\www...', Array, true)
+#11 D:\svn\wamp\www\yii\yii\web\CController.php(783): CController->renderPartial('create', Array, true)
+#12 D:\svn\wamp\www\yii\appone\protected\controllers\bg\ItemController.php(69): CController->render('create', Array)
+#13 D:\svn\wamp\www\yii\yii\web\actions\CInlineAction.php(50): ItemController->actionCreate()
+#14 D:\svn\wamp\www\yii\yii\web\CController.php(309): CInlineAction->runWithParams(Array)
+#15 D:\svn\wamp\www\yii\yii\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 D:\svn\wamp\www\yii\yii\web\filters\CFilter.php(41): CFilterChain->run()
+#17 D:\svn\wamp\www\yii\yii\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 D:\svn\wamp\www\yii\yii\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 D:\svn\wamp\www\yii\yii\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 D:\svn\wamp\www\yii\yii\web\CController.php(292): CFilterChain->run()
+#21 D:\svn\wamp\www\yii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): CController->run('create')
+#23 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController('bg/item/create')
+#24 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#25 D:\svn\wamp\www\yii\appone\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/appone/index.php?r=bg/item/create
+HTTP_REFERER=http://www.myapp.com/appone/index.php?r=bg/item/admin
+---
+2012/11/06 04:20:11 [error] [exception.CException] exception 'CException' with message '别名 "widgets.timepicker.timepicker" 是无效的. 请确定它指向一个已存在的目录或文件.' in D:\svn\wamp\www\yii\yii\YiiBase.php:343
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\web\CWidgetFactory.php(147): YiiBase::import('widgets.timepic...', true)
+#1 D:\svn\wamp\www\yii\yii\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(ItemController), 'widgets.timepic...', Array)
+#2 D:\svn\wamp\www\yii\yii\web\CBaseController.php(173): CBaseController->createWidget('widgets.timepic...', Array)
+#3 D:\svn\wamp\www\yii\appone\protected\views\bg\item\_form.php(60): CBaseController->widget('widgets.timepic...', Array)
+#4 D:\svn\wamp\www\yii\yii\web\CBaseController.php(127): require('D:\svn\wamp\www...')
+#5 D:\svn\wamp\www\yii\yii\web\CBaseController.php(96): CBaseController->renderInternal('D:\svn\wamp\www...', Array, true)
+#6 D:\svn\wamp\www\yii\yii\web\CController.php(870): CBaseController->renderFile('D:\svn\wamp\www...', Array, true)
+#7 D:\svn\wamp\www\yii\appone\protected\views\bg\item\create.php(15): CController->renderPartial('_form', Array)
+#8 D:\svn\wamp\www\yii\yii\web\CBaseController.php(127): require('D:\svn\wamp\www...')
+#9 D:\svn\wamp\www\yii\yii\web\CBaseController.php(96): CBaseController->renderInternal('D:\svn\wamp\www...', Array, true)
+#10 D:\svn\wamp\www\yii\yii\web\CController.php(870): CBaseController->renderFile('D:\svn\wamp\www...', Array, true)
+#11 D:\svn\wamp\www\yii\yii\web\CController.php(783): CController->renderPartial('create', Array, true)
+#12 D:\svn\wamp\www\yii\appone\protected\controllers\bg\ItemController.php(69): CController->render('create', Array)
+#13 D:\svn\wamp\www\yii\yii\web\actions\CInlineAction.php(50): ItemController->actionCreate()
+#14 D:\svn\wamp\www\yii\yii\web\CController.php(309): CInlineAction->runWithParams(Array)
+#15 D:\svn\wamp\www\yii\yii\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 D:\svn\wamp\www\yii\yii\web\filters\CFilter.php(41): CFilterChain->run()
+#17 D:\svn\wamp\www\yii\yii\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 D:\svn\wamp\www\yii\yii\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 D:\svn\wamp\www\yii\yii\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 D:\svn\wamp\www\yii\yii\web\CController.php(292): CFilterChain->run()
+#21 D:\svn\wamp\www\yii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): CController->run('create')
+#23 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController('bg/item/create')
+#24 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#25 D:\svn\wamp\www\yii\appone\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/appone/index.php?r=bg/item/create
+HTTP_REFERER=http://www.myapp.com/appone/index.php?r=bg/item/admin
+---
+2012/11/06 06:00:55 [error] [exception.CException] exception 'CException' with message '别名 "widgets.timepicker.timepicker" 是无效的. 请确定它指向一个已存在的目录或文件.' in D:\svn\wamp\www\yii\yii\YiiBase.php:343
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\web\CWidgetFactory.php(147): YiiBase::import('widgets.timepic...', true)
+#1 D:\svn\wamp\www\yii\yii\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(ItemController), 'widgets.timepic...', Array)
+#2 D:\svn\wamp\www\yii\yii\web\CBaseController.php(173): CBaseController->createWidget('widgets.timepic...', Array)
+#3 D:\svn\wamp\www\yii\appone\protected\views\bg\item\_form.php(60): CBaseController->widget('widgets.timepic...', Array)
+#4 D:\svn\wamp\www\yii\yii\web\CBaseController.php(127): require('D:\svn\wamp\www...')
+#5 D:\svn\wamp\www\yii\yii\web\CBaseController.php(96): CBaseController->renderInternal('D:\svn\wamp\www...', Array, true)
+#6 D:\svn\wamp\www\yii\yii\web\CController.php(870): CBaseController->renderFile('D:\svn\wamp\www...', Array, true)
+#7 D:\svn\wamp\www\yii\appone\protected\views\bg\item\update.php(18): CController->renderPartial('_form', Array)
+#8 D:\svn\wamp\www\yii\yii\web\CBaseController.php(127): require('D:\svn\wamp\www...')
+#9 D:\svn\wamp\www\yii\yii\web\CBaseController.php(96): CBaseController->renderInternal('D:\svn\wamp\www...', Array, true)
+#10 D:\svn\wamp\www\yii\yii\web\CController.php(870): CBaseController->renderFile('D:\svn\wamp\www...', Array, true)
+#11 D:\svn\wamp\www\yii\yii\web\CController.php(783): CController->renderPartial('update', Array, true)
+#12 D:\svn\wamp\www\yii\appone\protected\controllers\bg\ItemController.php(93): CController->render('update', Array)
+#13 [internal function]: ItemController->actionUpdate('2')
+#14 D:\svn\wamp\www\yii\yii\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(ItemController), Array)
+#15 D:\svn\wamp\www\yii\yii\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(ItemController), Object(ReflectionMethod), Array)
+#16 D:\svn\wamp\www\yii\yii\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 D:\svn\wamp\www\yii\yii\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 D:\svn\wamp\www\yii\yii\web\filters\CFilter.php(41): CFilterChain->run()
+#19 D:\svn\wamp\www\yii\yii\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#20 D:\svn\wamp\www\yii\yii\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 D:\svn\wamp\www\yii\yii\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 D:\svn\wamp\www\yii\yii\web\CController.php(292): CFilterChain->run()
+#23 D:\svn\wamp\www\yii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): CController->run('update')
+#25 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController('bg/item/update')
+#26 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#27 D:\svn\wamp\www\yii\appone\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/appone/index.php?r=bg/item/update&id=2
+HTTP_REFERER=http://www.myapp.com/appone/index.php?r=bg/item/view&id=2
+---
+2012/11/06 06:01:01 [error] [exception.CException] exception 'CException' with message '别名 "widgets.timepicker.timepicker" 是无效的. 请确定它指向一个已存在的目录或文件.' in D:\svn\wamp\www\yii\yii\YiiBase.php:343
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\web\CWidgetFactory.php(147): YiiBase::import('widgets.timepic...', true)
+#1 D:\svn\wamp\www\yii\yii\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(ItemController), 'widgets.timepic...', Array)
+#2 D:\svn\wamp\www\yii\yii\web\CBaseController.php(173): CBaseController->createWidget('widgets.timepic...', Array)
+#3 D:\svn\wamp\www\yii\appone\protected\views\bg\item\_form.php(60): CBaseController->widget('widgets.timepic...', Array)
+#4 D:\svn\wamp\www\yii\yii\web\CBaseController.php(127): require('D:\svn\wamp\www...')
+#5 D:\svn\wamp\www\yii\yii\web\CBaseController.php(96): CBaseController->renderInternal('D:\svn\wamp\www...', Array, true)
+#6 D:\svn\wamp\www\yii\yii\web\CController.php(870): CBaseController->renderFile('D:\svn\wamp\www...', Array, true)
+#7 D:\svn\wamp\www\yii\appone\protected\views\bg\item\create.php(15): CController->renderPartial('_form', Array)
+#8 D:\svn\wamp\www\yii\yii\web\CBaseController.php(127): require('D:\svn\wamp\www...')
+#9 D:\svn\wamp\www\yii\yii\web\CBaseController.php(96): CBaseController->renderInternal('D:\svn\wamp\www...', Array, true)
+#10 D:\svn\wamp\www\yii\yii\web\CController.php(870): CBaseController->renderFile('D:\svn\wamp\www...', Array, true)
+#11 D:\svn\wamp\www\yii\yii\web\CController.php(783): CController->renderPartial('create', Array, true)
+#12 D:\svn\wamp\www\yii\appone\protected\controllers\bg\ItemController.php(69): CController->render('create', Array)
+#13 D:\svn\wamp\www\yii\yii\web\actions\CInlineAction.php(50): ItemController->actionCreate()
+#14 D:\svn\wamp\www\yii\yii\web\CController.php(309): CInlineAction->runWithParams(Array)
+#15 D:\svn\wamp\www\yii\yii\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 D:\svn\wamp\www\yii\yii\web\filters\CFilter.php(41): CFilterChain->run()
+#17 D:\svn\wamp\www\yii\yii\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 D:\svn\wamp\www\yii\yii\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 D:\svn\wamp\www\yii\yii\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 D:\svn\wamp\www\yii\yii\web\CController.php(292): CFilterChain->run()
+#21 D:\svn\wamp\www\yii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): CController->run('create')
+#23 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController('bg/item/create')
+#24 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#25 D:\svn\wamp\www\yii\appone\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/appone/index.php?r=bg/item/create
+HTTP_REFERER=http://www.myapp.com/appone/index.php?r=bg/item/view&id=2
+---
+2012/11/06 06:01:43 [error] [exception.CException] exception 'CException' with message '别名 "extentions.timepicker.timepicker" 是无效的. 请确定它指向一个已存在的目录或文件.' in D:\svn\wamp\www\yii\yii\YiiBase.php:343
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\web\CWidgetFactory.php(147): YiiBase::import('extentions.time...', true)
+#1 D:\svn\wamp\www\yii\yii\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(ItemController), 'extentions.time...', Array)
+#2 D:\svn\wamp\www\yii\yii\web\CBaseController.php(173): CBaseController->createWidget('extentions.time...', Array)
+#3 D:\svn\wamp\www\yii\appone\protected\views\bg\item\_form.php(60): CBaseController->widget('extentions.time...', Array)
+#4 D:\svn\wamp\www\yii\yii\web\CBaseController.php(127): require('D:\svn\wamp\www...')
+#5 D:\svn\wamp\www\yii\yii\web\CBaseController.php(96): CBaseController->renderInternal('D:\svn\wamp\www...', Array, true)
+#6 D:\svn\wamp\www\yii\yii\web\CController.php(870): CBaseController->renderFile('D:\svn\wamp\www...', Array, true)
+#7 D:\svn\wamp\www\yii\appone\protected\views\bg\item\create.php(15): CController->renderPartial('_form', Array)
+#8 D:\svn\wamp\www\yii\yii\web\CBaseController.php(127): require('D:\svn\wamp\www...')
+#9 D:\svn\wamp\www\yii\yii\web\CBaseController.php(96): CBaseController->renderInternal('D:\svn\wamp\www...', Array, true)
+#10 D:\svn\wamp\www\yii\yii\web\CController.php(870): CBaseController->renderFile('D:\svn\wamp\www...', Array, true)
+#11 D:\svn\wamp\www\yii\yii\web\CController.php(783): CController->renderPartial('create', Array, true)
+#12 D:\svn\wamp\www\yii\appone\protected\controllers\bg\ItemController.php(69): CController->render('create', Array)
+#13 D:\svn\wamp\www\yii\yii\web\actions\CInlineAction.php(50): ItemController->actionCreate()
+#14 D:\svn\wamp\www\yii\yii\web\CController.php(309): CInlineAction->runWithParams(Array)
+#15 D:\svn\wamp\www\yii\yii\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 D:\svn\wamp\www\yii\yii\web\filters\CFilter.php(41): CFilterChain->run()
+#17 D:\svn\wamp\www\yii\yii\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 D:\svn\wamp\www\yii\yii\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 D:\svn\wamp\www\yii\yii\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 D:\svn\wamp\www\yii\yii\web\CController.php(292): CFilterChain->run()
+#21 D:\svn\wamp\www\yii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): CController->run('create')
+#23 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController('bg/item/create')
+#24 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#25 D:\svn\wamp\www\yii\appone\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/appone/index.php?r=bg/item/create
+HTTP_REFERER=http://www.myapp.com/appone/index.php?r=bg/item/view&id=2
+---
+2012/11/06 06:01:43 [error] [exception.CException] exception 'CException' with message '别名 "extentions.timepicker.timepicker" 是无效的. 请确定它指向一个已存在的目录或文件.' in D:\svn\wamp\www\yii\yii\YiiBase.php:343
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\web\CWidgetFactory.php(147): YiiBase::import('extentions.time...', true)
+#1 D:\svn\wamp\www\yii\yii\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(ItemController), 'extentions.time...', Array)
+#2 D:\svn\wamp\www\yii\yii\web\CBaseController.php(173): CBaseController->createWidget('extentions.time...', Array)
+#3 D:\svn\wamp\www\yii\appone\protected\views\bg\item\_form.php(60): CBaseController->widget('extentions.time...', Array)
+#4 D:\svn\wamp\www\yii\yii\web\CBaseController.php(127): require('D:\svn\wamp\www...')
+#5 D:\svn\wamp\www\yii\yii\web\CBaseController.php(96): CBaseController->renderInternal('D:\svn\wamp\www...', Array, true)
+#6 D:\svn\wamp\www\yii\yii\web\CController.php(870): CBaseController->renderFile('D:\svn\wamp\www...', Array, true)
+#7 D:\svn\wamp\www\yii\appone\protected\views\bg\item\create.php(15): CController->renderPartial('_form', Array)
+#8 D:\svn\wamp\www\yii\yii\web\CBaseController.php(127): require('D:\svn\wamp\www...')
+#9 D:\svn\wamp\www\yii\yii\web\CBaseController.php(96): CBaseController->renderInternal('D:\svn\wamp\www...', Array, true)
+#10 D:\svn\wamp\www\yii\yii\web\CController.php(870): CBaseController->renderFile('D:\svn\wamp\www...', Array, true)
+#11 D:\svn\wamp\www\yii\yii\web\CController.php(783): CController->renderPartial('create', Array, true)
+#12 D:\svn\wamp\www\yii\appone\protected\controllers\bg\ItemController.php(69): CController->render('create', Array)
+#13 D:\svn\wamp\www\yii\yii\web\actions\CInlineAction.php(50): ItemController->actionCreate()
+#14 D:\svn\wamp\www\yii\yii\web\CController.php(309): CInlineAction->runWithParams(Array)
+#15 D:\svn\wamp\www\yii\yii\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 D:\svn\wamp\www\yii\yii\web\filters\CFilter.php(41): CFilterChain->run()
+#17 D:\svn\wamp\www\yii\yii\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 D:\svn\wamp\www\yii\yii\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 D:\svn\wamp\www\yii\yii\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 D:\svn\wamp\www\yii\yii\web\CController.php(292): CFilterChain->run()
+#21 D:\svn\wamp\www\yii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): CController->run('create')
+#23 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController('bg/item/create')
+#24 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#25 D:\svn\wamp\www\yii\appone\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/appone/index.php?r=bg/item/create
+HTTP_REFERER=http://www.myapp.com/appone/index.php?r=bg/item/view&id=2
+---
+2012/11/06 06:01:44 [error] [exception.CException] exception 'CException' with message '别名 "extentions.timepicker.timepicker" 是无效的. 请确定它指向一个已存在的目录或文件.' in D:\svn\wamp\www\yii\yii\YiiBase.php:343
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\web\CWidgetFactory.php(147): YiiBase::import('extentions.time...', true)
+#1 D:\svn\wamp\www\yii\yii\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(ItemController), 'extentions.time...', Array)
+#2 D:\svn\wamp\www\yii\yii\web\CBaseController.php(173): CBaseController->createWidget('extentions.time...', Array)
+#3 D:\svn\wamp\www\yii\appone\protected\views\bg\item\_form.php(60): CBaseController->widget('extentions.time...', Array)
+#4 D:\svn\wamp\www\yii\yii\web\CBaseController.php(127): require('D:\svn\wamp\www...')
+#5 D:\svn\wamp\www\yii\yii\web\CBaseController.php(96): CBaseController->renderInternal('D:\svn\wamp\www...', Array, true)
+#6 D:\svn\wamp\www\yii\yii\web\CController.php(870): CBaseController->renderFile('D:\svn\wamp\www...', Array, true)
+#7 D:\svn\wamp\www\yii\appone\protected\views\bg\item\create.php(15): CController->renderPartial('_form', Array)
+#8 D:\svn\wamp\www\yii\yii\web\CBaseController.php(127): require('D:\svn\wamp\www...')
+#9 D:\svn\wamp\www\yii\yii\web\CBaseController.php(96): CBaseController->renderInternal('D:\svn\wamp\www...', Array, true)
+#10 D:\svn\wamp\www\yii\yii\web\CController.php(870): CBaseController->renderFile('D:\svn\wamp\www...', Array, true)
+#11 D:\svn\wamp\www\yii\yii\web\CController.php(783): CController->renderPartial('create', Array, true)
+#12 D:\svn\wamp\www\yii\appone\protected\controllers\bg\ItemController.php(69): CController->render('create', Array)
+#13 D:\svn\wamp\www\yii\yii\web\actions\CInlineAction.php(50): ItemController->actionCreate()
+#14 D:\svn\wamp\www\yii\yii\web\CController.php(309): CInlineAction->runWithParams(Array)
+#15 D:\svn\wamp\www\yii\yii\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 D:\svn\wamp\www\yii\yii\web\filters\CFilter.php(41): CFilterChain->run()
+#17 D:\svn\wamp\www\yii\yii\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 D:\svn\wamp\www\yii\yii\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 D:\svn\wamp\www\yii\yii\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 D:\svn\wamp\www\yii\yii\web\CController.php(292): CFilterChain->run()
+#21 D:\svn\wamp\www\yii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): CController->run('create')
+#23 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController('bg/item/create')
+#24 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#25 D:\svn\wamp\www\yii\appone\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/appone/index.php?r=bg/item/create
+HTTP_REFERER=http://www.myapp.com/appone/index.php?r=bg/item/view&id=2
+---
+2012/11/06 06:01:44 [error] [exception.CException] exception 'CException' with message '别名 "extentions.timepicker.timepicker" 是无效的. 请确定它指向一个已存在的目录或文件.' in D:\svn\wamp\www\yii\yii\YiiBase.php:343
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\web\CWidgetFactory.php(147): YiiBase::import('extentions.time...', true)
+#1 D:\svn\wamp\www\yii\yii\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(ItemController), 'extentions.time...', Array)
+#2 D:\svn\wamp\www\yii\yii\web\CBaseController.php(173): CBaseController->createWidget('extentions.time...', Array)
+#3 D:\svn\wamp\www\yii\appone\protected\views\bg\item\_form.php(60): CBaseController->widget('extentions.time...', Array)
+#4 D:\svn\wamp\www\yii\yii\web\CBaseController.php(127): require('D:\svn\wamp\www...')
+#5 D:\svn\wamp\www\yii\yii\web\CBaseController.php(96): CBaseController->renderInternal('D:\svn\wamp\www...', Array, true)
+#6 D:\svn\wamp\www\yii\yii\web\CController.php(870): CBaseController->renderFile('D:\svn\wamp\www...', Array, true)
+#7 D:\svn\wamp\www\yii\appone\protected\views\bg\item\create.php(15): CController->renderPartial('_form', Array)
+#8 D:\svn\wamp\www\yii\yii\web\CBaseController.php(127): require('D:\svn\wamp\www...')
+#9 D:\svn\wamp\www\yii\yii\web\CBaseController.php(96): CBaseController->renderInternal('D:\svn\wamp\www...', Array, true)
+#10 D:\svn\wamp\www\yii\yii\web\CController.php(870): CBaseController->renderFile('D:\svn\wamp\www...', Array, true)
+#11 D:\svn\wamp\www\yii\yii\web\CController.php(783): CController->renderPartial('create', Array, true)
+#12 D:\svn\wamp\www\yii\appone\protected\controllers\bg\ItemController.php(69): CController->render('create', Array)
+#13 D:\svn\wamp\www\yii\yii\web\actions\CInlineAction.php(50): ItemController->actionCreate()
+#14 D:\svn\wamp\www\yii\yii\web\CController.php(309): CInlineAction->runWithParams(Array)
+#15 D:\svn\wamp\www\yii\yii\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 D:\svn\wamp\www\yii\yii\web\filters\CFilter.php(41): CFilterChain->run()
+#17 D:\svn\wamp\www\yii\yii\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 D:\svn\wamp\www\yii\yii\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 D:\svn\wamp\www\yii\yii\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 D:\svn\wamp\www\yii\yii\web\CController.php(292): CFilterChain->run()
+#21 D:\svn\wamp\www\yii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): CController->run('create')
+#23 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController('bg/item/create')
+#24 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#25 D:\svn\wamp\www\yii\appone\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/appone/index.php?r=bg/item/create
+HTTP_REFERER=http://www.myapp.com/appone/index.php?r=bg/item/view&id=2
+---
