@@ -25,12 +25,14 @@ class Appcache extends CController
         $cacheVal = Yii::app()->cache->get($cacheKey);
         if($cacheVal != null){
             $cacheVal['times'] += 1;
+            $cacheVal['changed'] = 1;
             Yii::app()->cache->set($cacheKey, $cacheVal, $cacheTime);
         }else{
             $theOneAttribute = Item::model()->findByPk($itemId)->getAttribute($type);
             $cacheVal = array(
                 'times' => $theOneAttribute,
                 'lastUpdateTime' => time(),
+                'changed' => 0,
             );
             Yii::app()->cache->set($cacheKey, $cacheVal, $cacheTime);
         }
@@ -59,21 +61,30 @@ class Appcache extends CController
         var_dump($cacheVal);
 
         if($cacheVal != null){
-            $theOneAttribute = $cacheVal['times'];
             //60秒更新到数据库
             if(!empty($cacheVal['lastUpdateTime']) && (time()-$cacheVal['lastUpdateTime']) > 60){
-                $theOne = Item::model()->findByPk($itemId);
-                $theOne->setAttribute($type, $cacheVal['times']);
-                if($theOne->update()){
+                //如果状态改变
+                if(!empty($cacheVal['changed']) && $cacheVal['changed'] == 1){
+                    $theOne = Item::model()->findByPk($itemId);
+                    $theOne->setAttribute($type, $cacheVal['times']);
+                    if($theOne->update()){
+                        $cacheVal['changed'] = 0;
+                        $cacheVal['lastUpdateTime'] = time();
+                    }
+
+                    var_dump("changed");
+                }else{
                     $cacheVal['lastUpdateTime'] = time();
-                    Yii::app()->cache->set($cacheKey, $cacheVal, $cacheTime);
+                    var_dump("no changed");
                 }
+                Yii::app()->cache->set($cacheKey, $cacheVal, $cacheTime);
             }
         }else{
             $theOneAttribute = Item::model()->findByPk($itemId)->getAttribute($type);
             $cacheVal = array(
                 'times' => $theOneAttribute,
                 'lastUpdateTime' => time(),
+                'changed' => 0,
             );
             Yii::app()->cache->set($cacheKey, $cacheVal, $cacheTime);
         }
