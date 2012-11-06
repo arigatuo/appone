@@ -27,9 +27,10 @@ class SiteController extends Controller
 	 */
 	public function actionIndex()
 	{
+        //入口页
+        //qq用户接入
         $qqMember = new Qqmember;
         $qqMember->memberEnter();
-		//$this->render('index');
 	}
 
 	/**

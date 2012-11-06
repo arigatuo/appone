@@ -8,7 +8,7 @@
  */
 class Qqmember extends CController
 {
-    private $_appKey, $_appId, $_appRecallUrl, $_serverName;
+    private $_appKey, $_appId, $_appRecallUrl, $_serverName, $_followPageId;
 
     public function __construct(){
         ;
@@ -21,8 +21,12 @@ class Qqmember extends CController
         $this->_appId = $config->itemAt("appId");
         $this->_appRecallUrl = $config->itemAt("appRecallUrl");
         $this->_serverName = $config->itemAt("serverName");
+
+        //要关注的qq号
+        $this->_followPageId = $config->itemAt("page_id");
     }
 
+    //取得用户信息
     public function get_user_info($sdk, $openid, $openkey, $pf){
         $params = array(
             'openid' => $openid,
@@ -33,7 +37,20 @@ class Qqmember extends CController
         return $sdk->api($script_name, $params,'post');
     }
 
-    public function memberEnter(){
+    //判断是否关注, page_id为要关注的qq号
+    public function is_attention($sdk, $openid, $openkey, $pf, $page_id){
+        $params = array(
+            'openid' => $openid,
+            'openkey' => $openkey,
+            'pf' => $pf,
+            'page_id' => $page_id,
+        );
+        $script_name = '/v3/page/is_fans';
+        return $sdk->api($script_name, $params,'post');
+    }
+
+    //sdk
+    public function newSdk(){
         self::init();
         Yii::import('application.vendors.qqsdk.*');
         Yii::import('application.vendors.qqsdk.lib.*');
@@ -42,13 +59,82 @@ class Qqmember extends CController
         $sdk = new OpenApiV3($this->_appId, $this->_appKey);
         $sdk->setServerName($this->_serverName);
 
+        return $sdk;
+    }
+
+    //用户接入
+    public function memberEnter(){
+
+        $sdk = self::newSdk();
+
         if(!empty($_REQUEST['openid']) && !empty($_REQUEST['openkey']) && !empty($_REQUEST['pf'])){
+            $newSession = new CHttpSession();
+            $newSession['userInfo'] = array();
+
+            //user_info
             $ret = $this->get_user_info($sdk, $_REQUEST['openid'], $_REQUEST['openkey'], $_REQUEST['pf']);
+            //is_fans
+            $ret_is_fans = $this->is_attention($sdk, $_REQUEST['openid'], $_REQUEST['openkey'], $_REQUEST['pf'], $this->_followPageId);
+
             if($ret['ret'] !== 0){
                 throw new CHttpException("404");
             }else{
-                var_dump($ret);
+                $isExist = User::model()->countByAttributes(array('openid'=>$_REQUEST['openid']));
+                $isFans = 0;
+                if($ret_is_fans['ret'] == 0){
+                    $isFans = $ret_is_fans['is_fans'];
+                }
+
+                if($isExist > 0){
+                    $theOne = User::model()->findByAttributes(array('openid'=>$_REQUEST['openid']));
+                    $theOneAttribute = $theOne->getAttributes();
+
+                    if($theOneAttribute != null){
+                        $userInfo = array(
+                            'userid' => $theOneAttribute['uid'],
+                            'nickname' => $theOneAttribute['nickname'],
+                            'head' => $theOneAttribute['head'],
+                            'openid' => $_REQUEST['openid'],
+                            'openkey' => $_REQUEST['openkey'],
+                            'isFans' => $isFans,
+                        );
+                        $newSession['userInfo'] = $userInfo;
+                    }
+                }else{
+                    $newUser = new User;
+
+                    $nickname_head = trim(Helper::truncate_utf8_string($ret['nickname'],5));
+                    if(empty($nickname_head)){
+                        $nickname_head = substr($_REQUEST['openid'], 0, 5);
+                    }
+
+                    $nickname = $nickname_head."_".substr(md5(time()), 5, 5);
+                    $newUser->attributes = array(
+                        'openid' => $_REQUEST['openid'],
+                        'nickname' => $nickname,
+                        'gender' => $ret['gender'] == "男" ?  1 : 0,
+                        'ctime' => time(),
+                        'score' => 0,
+                        'head' => $ret['figureurl'],
+                        'share_time' => 0,
+                        'fav_time' => 0,
+                        'is_follow' => $isFans,
+                    );
+                    $lastInsertId = $newUser->save();
+
+
+                    $userInfo = array(
+                        'userid' => $lastInsertId,
+                        'nickname' => $nickname,
+                        'head' => $ret['figureurl'],
+                        'openid' => $_REQUEST['openid'],
+                        'openkey' => $_REQUEST['openkey'],
+                        'isFans' => $isFans,
+                    );
+                    $newSession['userInfo'] = $userInfo;
+                }
             }
+            var_dump($_SESSION);
         }
     }
 }

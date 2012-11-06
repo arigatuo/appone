@@ -1860,3 +1860,571 @@ Stack trace:
 REQUEST_URI=/qq_firstApp/?openid=F43F3336D5C06A88AF709AA77AE9F630&openkey=36EC626B3B4D61EC3CC7649928FA5999&pf=qzone&pfkey=a9a9440de1e7051ed02f3d1a79b3d924
 HTTP_REFERER=http://qzone.devapp.open.qq.com/cgi-bin/devapp?qz_height=1000&qz_width=760&openid=00000000000000000000000004DA1A07&openkey=4E2C2FACE98C9170293BEF2462FC6C7E&pf=qzone&pfkey=948bf8fdf47eabcb7da3079dd076e120&qz_ver=6&appcanvas=1&params=&via=QZ.HashRefresh
 ---
+2012/11/05 04:22:35 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'qq_firstapp'' in D:\svn\wamp\www\yii\yii\db\CDbConnection.php:382
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\db\CDbConnection.php(331): CDbConnection->open()
+#1 D:\svn\wamp\www\yii\yii\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 D:\svn\wamp\www\yii\yii\base\CModule.php(388): CDbConnection->init()
+#3 D:\svn\wamp\www\yii\yii\base\CModule.php(104): CModule->getComponent('db')
+#4 D:\svn\wamp\www\yii\yii\gii\generators\model\ModelCode.php(54): CModule->__get('db')
+#5 D:\svn\wamp\www\yii\yii\web\CFormModel.php(40): ModelCode->init()
+#6 D:\svn\wamp\www\yii\yii\gii\CCodeGenerator.php(152): CFormModel->__construct()
+#7 D:\svn\wamp\www\yii\yii\gii\CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 D:\svn\wamp\www\yii\yii\web\actions\CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 D:\svn\wamp\www\yii\yii\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 D:\svn\wamp\www\yii\yii\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 D:\svn\wamp\www\yii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): CController->run('')
+#13 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController('gii/model')
+#14 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\svn\wamp\www\yii\appone\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/appone/index.php?r=gii/model
+HTTP_REFERER=http://www.myapp.com/appone/index.php?r=gii/default/index
+---
+2012/11/05 06:37:27 [error] [exception.CHttpException.404] exception 'CHttpException' in D:\svn\wamp\www\yii\appone\protected\components\Qqmember.php:47
+Stack trace:
+#0 D:\svn\wamp\www\yii\appone\protected\controllers\SiteController.php(31): Qqmember->memberEnter()
+#1 D:\svn\wamp\www\yii\yii\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#2 D:\svn\wamp\www\yii\yii\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 D:\svn\wamp\www\yii\yii\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 D:\svn\wamp\www\yii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): CController->run('')
+#6 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController('')
+#7 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\svn\wamp\www\yii\appone\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/appone/?openid=F43F3336D5C06A88AF709AA77AE9F630&openkey=BEEE38A86C86F19035DFA4C9461B64E3&pf=qzone&pfkey=df98ebb90733a78811778b4bd2db0116
+---
+2012/11/05 06:37:44 [error] [exception.CHttpException.404] exception 'CHttpException' in D:\svn\wamp\www\yii\appone\protected\components\Qqmember.php:48
+Stack trace:
+#0 D:\svn\wamp\www\yii\appone\protected\controllers\SiteController.php(31): Qqmember->memberEnter()
+#1 D:\svn\wamp\www\yii\yii\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#2 D:\svn\wamp\www\yii\yii\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 D:\svn\wamp\www\yii\yii\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 D:\svn\wamp\www\yii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): CController->run('')
+#6 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController('')
+#7 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\svn\wamp\www\yii\appone\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/appone/?openid=F43F3336D5C06A88AF709AA77AE9F630&openkey=BEEE38A86C86F19035DFA4C9461B64E3&pf=qzone&pfkey=df98ebb90733a78811778b4bd2db0116
+---
+2012/11/05 06:37:45 [error] [exception.CHttpException.404] exception 'CHttpException' in D:\svn\wamp\www\yii\appone\protected\components\Qqmember.php:48
+Stack trace:
+#0 D:\svn\wamp\www\yii\appone\protected\controllers\SiteController.php(31): Qqmember->memberEnter()
+#1 D:\svn\wamp\www\yii\yii\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#2 D:\svn\wamp\www\yii\yii\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 D:\svn\wamp\www\yii\yii\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 D:\svn\wamp\www\yii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): CController->run('')
+#6 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController('')
+#7 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\svn\wamp\www\yii\appone\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/appone/?openid=F43F3336D5C06A88AF709AA77AE9F630&openkey=BEEE38A86C86F19035DFA4C9461B64E3&pf=qzone&pfkey=df98ebb90733a78811778b4bd2db0116
+---
+2012/11/05 06:38:18 [error] [exception.CHttpException.404] exception 'CHttpException' in D:\svn\wamp\www\yii\appone\protected\components\Qqmember.php:47
+Stack trace:
+#0 D:\svn\wamp\www\yii\appone\protected\controllers\SiteController.php(31): Qqmember->memberEnter()
+#1 D:\svn\wamp\www\yii\yii\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#2 D:\svn\wamp\www\yii\yii\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 D:\svn\wamp\www\yii\yii\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 D:\svn\wamp\www\yii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): CController->run('')
+#6 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController('')
+#7 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\svn\wamp\www\yii\appone\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/appone/?openid=F43F3336D5C06A88AF709AA77AE9F630&openkey=1D99D53C0189BB9124A699E1B075168B&pf=qzone&pfkey=8be3e421366cf85da0836346f676d16e
+---
+2012/11/05 07:31:06 [error] [exception.CHttpException.404] exception 'CHttpException' in D:\svn\wamp\www\yii\appone\protected\components\Qqmember.php:48
+Stack trace:
+#0 D:\svn\wamp\www\yii\appone\protected\controllers\SiteController.php(31): Qqmember->memberEnter()
+#1 D:\svn\wamp\www\yii\yii\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#2 D:\svn\wamp\www\yii\yii\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 D:\svn\wamp\www\yii\yii\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 D:\svn\wamp\www\yii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): CController->run('')
+#6 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController('')
+#7 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\svn\wamp\www\yii\appone\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/appone/?openid=F43F3336D5C06A88AF709AA77AE9F630&openkey=1D99D53C0189BB9124A699E1B075168B&pf=qzone&pfkey=8be3e421366cf85da0836346f676d16e
+HTTP_REFERER=http://qzone.devapp.open.qq.com/cgi-bin/devapp?qz_height=1000&qz_width=760&openid=00000000000000000000000004DA1A07&openkey=F78165B9146391975C28E7A7C161D104&pf=qzone&pfkey=59da9a35f1ef6b8f786defb5a236f5f7&qz_ver=6&appcanvas=1&params=&via=QZ.APPWALL.abtest0.0
+---
+2012/11/05 07:55:31 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'F43F3336D5C06A88AF709AA77AE9F630' for key 'openid'. The SQL statement executed was: INSERT INTO `qfa_user` (`score`, `share_time`, `fav_time`, `gender`, `is_follow`, `openid`, `nickname`, `ctime`, `head`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8).
+in D:\svn\wamp\www\yii\appone\protected\components\Qqmember.php (67)
+in D:\svn\wamp\www\yii\appone\protected\controllers\SiteController.php (31)
+in D:\svn\wamp\www\yii\appone\index.php (13)
+2012/11/05 07:55:31 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'F43F3336D5C06A88AF709AA77AE9F630' for key 'openid'. The SQL statement executed was: INSERT INTO `qfa_user` (`score`, `share_time`, `fav_time`, `gender`, `is_follow`, `openid`, `nickname`, `ctime`, `head`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)' in D:\svn\wamp\www\yii\yii\db\CDbCommand.php:354
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\db\ar\CActiveRecord.php(1014): CDbCommand->execute()
+#1 D:\svn\wamp\www\yii\yii\db\ar\CActiveRecord.php(787): CActiveRecord->insert(NULL)
+#2 D:\svn\wamp\www\yii\appone\protected\components\Qqmember.php(67): CActiveRecord->save()
+#3 D:\svn\wamp\www\yii\appone\protected\controllers\SiteController.php(31): Qqmember->memberEnter()
+#4 D:\svn\wamp\www\yii\yii\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#5 D:\svn\wamp\www\yii\yii\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 D:\svn\wamp\www\yii\yii\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 D:\svn\wamp\www\yii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): CController->run('')
+#9 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController('')
+#10 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\svn\wamp\www\yii\appone\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/appone/?openid=F43F3336D5C06A88AF709AA77AE9F630&openkey=1D99D53C0189BB9124A699E1B075168B&pf=qzone&pfkey=8be3e421366cf85da0836346f676d16e
+HTTP_REFERER=http://qzone.devapp.open.qq.com/cgi-bin/devapp?qz_height=1000&qz_width=760&openid=00000000000000000000000004DA1A07&openkey=F78165B9146391975C28E7A7C161D104&pf=qzone&pfkey=59da9a35f1ef6b8f786defb5a236f5f7&qz_ver=6&appcanvas=1&params=&via=QZ.APPWALL.abtest0.0
+---
+2012/11/05 09:04:12 [error] [php] Undefined variable: _SESSION (D:\svn\wamp\www\yii\yii\web\CHttpSession.php:570)
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#1 D:\svn\wamp\www\yii\yii\web\CController.php(309): CInlineAction->runWithParams()
+#2 D:\svn\wamp\www\yii\yii\web\CController.php(287): SiteController->runAction()
+#3 D:\svn\wamp\www\yii\yii\web\CController.php(266): SiteController->runActionWithFilters()
+#4 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): SiteController->run()
+#5 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController()
+#6 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#7 D:\svn\wamp\www\yii\appone\index.php(13): CWebApplication->run()
+REQUEST_URI=/appone/?openid=F43F3336D5C06A88AF709AA77AE9F630&openkey=1D99D53C0189BB9124A699E1B075168B&pf=qzone&pfkey=8be3e421366cf85da0836346f676d16e
+in D:\svn\wamp\www\yii\appone\protected\components\Qqmember.php (47)
+in D:\svn\wamp\www\yii\appone\protected\controllers\SiteController.php (31)
+in D:\svn\wamp\www\yii\appone\index.php (13)
+2012/11/05 09:28:46 [error] [php] Undefined index: is_Fans (D:\svn\wamp\www\yii\appone\protected\components\Qqmember.php:70)
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\svn\wamp\www\yii\yii\web\CController.php(287): SiteController->runAction()
+#2 D:\svn\wamp\www\yii\yii\web\CController.php(266): SiteController->runActionWithFilters()
+#3 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): SiteController->run()
+#4 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController()
+#5 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#6 D:\svn\wamp\www\yii\appone\index.php(13): CWebApplication->run()
+REQUEST_URI=/appone/?openid=F43F3336D5C06A88AF709AA77AE9F630&openkey=1D99D53C0189BB9124A699E1B075168B&pf=qzone&pfkey=8be3e421366cf85da0836346f676d16e
+in D:\svn\wamp\www\yii\appone\protected\components\Qqmember.php (70)
+in D:\svn\wamp\www\yii\appone\protected\controllers\SiteController.php (33)
+in D:\svn\wamp\www\yii\appone\index.php (13)
+2012/11/05 09:37:36 [error] [exception.CHttpException.404] exception 'CHttpException' in D:\svn\wamp\www\yii\appone\protected\components\Qqmember.php:75
+Stack trace:
+#0 D:\svn\wamp\www\yii\appone\protected\controllers\SiteController.php(33): Qqmember->memberEnter()
+#1 D:\svn\wamp\www\yii\yii\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#2 D:\svn\wamp\www\yii\yii\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 D:\svn\wamp\www\yii\yii\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 D:\svn\wamp\www\yii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): CController->run('')
+#6 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController('')
+#7 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\svn\wamp\www\yii\appone\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/appone/?openid=F43F3336D5C06A88AF709AA77AE9F630&openkey=1D99D53C0189BB9124A699E1B075168B&pf=qzone&pfkey=8be3e421366cf85da0836346f676d16e
+HTTP_REFERER=http://qzone.devapp.open.qq.com/cgi-bin/devapp?qz_height=1000&qz_width=760&openid=00000000000000000000000004DA1A07&openkey=F78165B9146391975C28E7A7C161D104&pf=qzone&pfkey=59da9a35f1ef6b8f786defb5a236f5f7&qz_ver=6&appcanvas=1&params=&via=QZ.APPWALL.abtest0.0
+---
+2012/11/05 10:34:24 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in D:\svn\wamp\www\yii\yii\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 D:\svn\wamp\www\yii\yii\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\svn\wamp\www\yii\yii\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\svn\wamp\www\yii\yii\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\svn\wamp\www\yii\yii\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\svn\wamp\www\yii\yii\web\CController.php(292): CFilterChain->run()
+#6 D:\svn\wamp\www\yii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): CController->run('admin')
+#8 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController('bg/item/admin')
+#9 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\svn\wamp\www\yii\appone\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/appone/index.php?r=bg/item/admin
+HTTP_REFERER=http://www.myapp.com/appone/index.php?r=bg/item/create
+---
+2012/11/05 10:34:25 [error] [php] Undefined variable: _SESSION (D:\svn\wamp\www\yii\appone\protected\components\Qqmember.php:132)
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\svn\wamp\www\yii\yii\web\CController.php(287): SiteController->runAction()
+#2 D:\svn\wamp\www\yii\yii\web\CController.php(266): SiteController->runActionWithFilters()
+#3 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): SiteController->run()
+#4 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController()
+#5 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#6 D:\svn\wamp\www\yii\appone\index.php(13): CWebApplication->run()
+REQUEST_URI=/appone/index.php
+in D:\svn\wamp\www\yii\appone\protected\components\Qqmember.php (132)
+in D:\svn\wamp\www\yii\appone\protected\controllers\SiteController.php (33)
+in D:\svn\wamp\www\yii\appone\index.php (13)
+2012/11/05 10:34:32 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in D:\svn\wamp\www\yii\yii\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 D:\svn\wamp\www\yii\yii\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\svn\wamp\www\yii\yii\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\svn\wamp\www\yii\yii\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\svn\wamp\www\yii\yii\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\svn\wamp\www\yii\yii\web\CController.php(292): CFilterChain->run()
+#6 D:\svn\wamp\www\yii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): CController->run('admin')
+#8 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController('bg/item/admin')
+#9 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\svn\wamp\www\yii\appone\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/appone/index.php?r=bg/item/admin
+HTTP_REFERER=http://www.myapp.com/appone/index.php?r=bg/item/create
+---
+2012/11/05 10:34:33 [error] [php] Undefined variable: _SESSION (D:\svn\wamp\www\yii\appone\protected\components\Qqmember.php:132)
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\svn\wamp\www\yii\yii\web\CController.php(287): SiteController->runAction()
+#2 D:\svn\wamp\www\yii\yii\web\CController.php(266): SiteController->runActionWithFilters()
+#3 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): SiteController->run()
+#4 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController()
+#5 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#6 D:\svn\wamp\www\yii\appone\index.php(13): CWebApplication->run()
+REQUEST_URI=/appone/index.php
+in D:\svn\wamp\www\yii\appone\protected\components\Qqmember.php (132)
+in D:\svn\wamp\www\yii\appone\protected\controllers\SiteController.php (33)
+in D:\svn\wamp\www\yii\appone\index.php (13)
+2012/11/05 10:34:35 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in D:\svn\wamp\www\yii\yii\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 D:\svn\wamp\www\yii\yii\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\svn\wamp\www\yii\yii\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\svn\wamp\www\yii\yii\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\svn\wamp\www\yii\yii\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\svn\wamp\www\yii\yii\web\CController.php(292): CFilterChain->run()
+#6 D:\svn\wamp\www\yii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): CController->run('admin')
+#8 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController('bg/item/admin')
+#9 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\svn\wamp\www\yii\appone\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/appone/index.php?r=bg/item/admin
+HTTP_REFERER=http://www.myapp.com/appone/index.php?r=bg/item/create
+---
+2012/11/05 10:34:36 [error] [php] Undefined variable: _SESSION (D:\svn\wamp\www\yii\appone\protected\components\Qqmember.php:132)
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\svn\wamp\www\yii\yii\web\CController.php(287): SiteController->runAction()
+#2 D:\svn\wamp\www\yii\yii\web\CController.php(266): SiteController->runActionWithFilters()
+#3 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): SiteController->run()
+#4 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController()
+#5 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#6 D:\svn\wamp\www\yii\appone\index.php(13): CWebApplication->run()
+REQUEST_URI=/appone/index.php
+in D:\svn\wamp\www\yii\appone\protected\components\Qqmember.php (132)
+in D:\svn\wamp\www\yii\appone\protected\controllers\SiteController.php (33)
+in D:\svn\wamp\www\yii\appone\index.php (13)
+2012/11/05 10:34:37 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in D:\svn\wamp\www\yii\yii\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 D:\svn\wamp\www\yii\yii\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\svn\wamp\www\yii\yii\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\svn\wamp\www\yii\yii\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\svn\wamp\www\yii\yii\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\svn\wamp\www\yii\yii\web\CController.php(292): CFilterChain->run()
+#6 D:\svn\wamp\www\yii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): CController->run('admin')
+#8 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController('bg/item/admin')
+#9 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\svn\wamp\www\yii\appone\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/appone/index.php?r=bg/item/admin
+HTTP_REFERER=http://www.myapp.com/appone/index.php?r=bg/item/create
+---
+2012/11/05 10:34:39 [error] [php] Undefined variable: _SESSION (D:\svn\wamp\www\yii\appone\protected\components\Qqmember.php:132)
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\svn\wamp\www\yii\yii\web\CController.php(287): SiteController->runAction()
+#2 D:\svn\wamp\www\yii\yii\web\CController.php(266): SiteController->runActionWithFilters()
+#3 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): SiteController->run()
+#4 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController()
+#5 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#6 D:\svn\wamp\www\yii\appone\index.php(13): CWebApplication->run()
+REQUEST_URI=/appone/index.php
+in D:\svn\wamp\www\yii\appone\protected\components\Qqmember.php (132)
+in D:\svn\wamp\www\yii\appone\protected\controllers\SiteController.php (33)
+in D:\svn\wamp\www\yii\appone\index.php (13)
+2012/11/05 10:34:39 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in D:\svn\wamp\www\yii\yii\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 D:\svn\wamp\www\yii\yii\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\svn\wamp\www\yii\yii\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\svn\wamp\www\yii\yii\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\svn\wamp\www\yii\yii\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\svn\wamp\www\yii\yii\web\CController.php(292): CFilterChain->run()
+#6 D:\svn\wamp\www\yii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): CController->run('admin')
+#8 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController('bg/item/admin')
+#9 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\svn\wamp\www\yii\appone\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/appone/index.php?r=bg/item/admin
+HTTP_REFERER=http://www.myapp.com/appone/index.php?r=bg/item/create
+---
+2012/11/05 10:34:41 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in D:\svn\wamp\www\yii\yii\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 D:\svn\wamp\www\yii\yii\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\svn\wamp\www\yii\yii\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\svn\wamp\www\yii\yii\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\svn\wamp\www\yii\yii\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\svn\wamp\www\yii\yii\web\CController.php(292): CFilterChain->run()
+#6 D:\svn\wamp\www\yii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): CController->run('admin')
+#8 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController('bg/item/admin')
+#9 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\svn\wamp\www\yii\appone\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/appone/index.php?r=bg/item/admin
+HTTP_REFERER=http://www.myapp.com/appone/index.php?r=bg/item/create
+---
+2012/11/05 10:34:42 [error] [php] Undefined variable: _SESSION (D:\svn\wamp\www\yii\appone\protected\components\Qqmember.php:132)
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\svn\wamp\www\yii\yii\web\CController.php(287): SiteController->runAction()
+#2 D:\svn\wamp\www\yii\yii\web\CController.php(266): SiteController->runActionWithFilters()
+#3 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): SiteController->run()
+#4 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController()
+#5 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#6 D:\svn\wamp\www\yii\appone\index.php(13): CWebApplication->run()
+REQUEST_URI=/appone/index.php
+in D:\svn\wamp\www\yii\appone\protected\components\Qqmember.php (132)
+in D:\svn\wamp\www\yii\appone\protected\controllers\SiteController.php (33)
+in D:\svn\wamp\www\yii\appone\index.php (13)
+2012/11/05 10:34:43 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in D:\svn\wamp\www\yii\yii\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 D:\svn\wamp\www\yii\yii\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\svn\wamp\www\yii\yii\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\svn\wamp\www\yii\yii\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\svn\wamp\www\yii\yii\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\svn\wamp\www\yii\yii\web\CController.php(292): CFilterChain->run()
+#6 D:\svn\wamp\www\yii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): CController->run('admin')
+#8 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController('bg/item/admin')
+#9 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\svn\wamp\www\yii\appone\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/appone/index.php?r=bg/item/admin
+HTTP_REFERER=http://www.myapp.com/appone/index.php?r=bg/item/create
+---
+2012/11/05 10:34:44 [error] [php] Undefined variable: _SESSION (D:\svn\wamp\www\yii\appone\protected\components\Qqmember.php:132)
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\svn\wamp\www\yii\yii\web\CController.php(287): SiteController->runAction()
+#2 D:\svn\wamp\www\yii\yii\web\CController.php(266): SiteController->runActionWithFilters()
+#3 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): SiteController->run()
+#4 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController()
+#5 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#6 D:\svn\wamp\www\yii\appone\index.php(13): CWebApplication->run()
+REQUEST_URI=/appone/index.php
+in D:\svn\wamp\www\yii\appone\protected\components\Qqmember.php (132)
+in D:\svn\wamp\www\yii\appone\protected\controllers\SiteController.php (33)
+in D:\svn\wamp\www\yii\appone\index.php (13)
+2012/11/05 10:34:46 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in D:\svn\wamp\www\yii\yii\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 D:\svn\wamp\www\yii\yii\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\svn\wamp\www\yii\yii\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\svn\wamp\www\yii\yii\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\svn\wamp\www\yii\yii\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\svn\wamp\www\yii\yii\web\CController.php(292): CFilterChain->run()
+#6 D:\svn\wamp\www\yii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): CController->run('admin')
+#8 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController('bg/item/admin')
+#9 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\svn\wamp\www\yii\appone\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/appone/index.php?r=bg/item/admin
+HTTP_REFERER=http://www.myapp.com/appone/index.php?r=bg/item/create
+---
+2012/11/05 10:34:47 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in D:\svn\wamp\www\yii\yii\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 D:\svn\wamp\www\yii\yii\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\svn\wamp\www\yii\yii\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\svn\wamp\www\yii\yii\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\svn\wamp\www\yii\yii\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\svn\wamp\www\yii\yii\web\CController.php(292): CFilterChain->run()
+#6 D:\svn\wamp\www\yii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): CController->run('admin')
+#8 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController('bg/item/admin')
+#9 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\svn\wamp\www\yii\appone\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/appone/index.php?r=bg/item/admin
+HTTP_REFERER=http://www.myapp.com/appone/index.php?r=bg/item/create
+---
+2012/11/05 10:34:48 [error] [php] Undefined variable: _SESSION (D:\svn\wamp\www\yii\appone\protected\components\Qqmember.php:132)
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\svn\wamp\www\yii\yii\web\CController.php(287): SiteController->runAction()
+#2 D:\svn\wamp\www\yii\yii\web\CController.php(266): SiteController->runActionWithFilters()
+#3 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): SiteController->run()
+#4 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController()
+#5 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#6 D:\svn\wamp\www\yii\appone\index.php(13): CWebApplication->run()
+REQUEST_URI=/appone/index.php
+in D:\svn\wamp\www\yii\appone\protected\components\Qqmember.php (132)
+in D:\svn\wamp\www\yii\appone\protected\controllers\SiteController.php (33)
+in D:\svn\wamp\www\yii\appone\index.php (13)
+2012/11/05 10:35:02 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in D:\svn\wamp\www\yii\yii\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 D:\svn\wamp\www\yii\yii\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\svn\wamp\www\yii\yii\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\svn\wamp\www\yii\yii\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\svn\wamp\www\yii\yii\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\svn\wamp\www\yii\yii\web\CController.php(292): CFilterChain->run()
+#6 D:\svn\wamp\www\yii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): CController->run('admin')
+#8 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController('bg/item/admin')
+#9 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\svn\wamp\www\yii\appone\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/appone/index.php?r=bg/item/admin
+HTTP_REFERER=http://www.myapp.com/appone/index.php?r=bg/item/create
+---
+2012/11/05 10:35:03 [error] [php] Undefined variable: _SESSION (D:\svn\wamp\www\yii\appone\protected\components\Qqmember.php:132)
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\svn\wamp\www\yii\yii\web\CController.php(287): SiteController->runAction()
+#2 D:\svn\wamp\www\yii\yii\web\CController.php(266): SiteController->runActionWithFilters()
+#3 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): SiteController->run()
+#4 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController()
+#5 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#6 D:\svn\wamp\www\yii\appone\index.php(13): CWebApplication->run()
+REQUEST_URI=/appone/index.php
+in D:\svn\wamp\www\yii\appone\protected\components\Qqmember.php (132)
+in D:\svn\wamp\www\yii\appone\protected\controllers\SiteController.php (33)
+in D:\svn\wamp\www\yii\appone\index.php (13)
+2012/11/05 10:35:14 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in D:\svn\wamp\www\yii\yii\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 D:\svn\wamp\www\yii\yii\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\svn\wamp\www\yii\yii\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\svn\wamp\www\yii\yii\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\svn\wamp\www\yii\yii\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\svn\wamp\www\yii\yii\web\CController.php(292): CFilterChain->run()
+#6 D:\svn\wamp\www\yii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): CController->run('admin')
+#8 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController('bg/item/admin')
+#9 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\svn\wamp\www\yii\appone\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/appone/index.php?r=bg/item/admin
+HTTP_REFERER=http://www.myapp.com/appone/index.php?r=bg/item/create
+---
+2012/11/05 10:35:33 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in D:\svn\wamp\www\yii\yii\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 D:\svn\wamp\www\yii\yii\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\svn\wamp\www\yii\yii\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\svn\wamp\www\yii\yii\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\svn\wamp\www\yii\yii\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\svn\wamp\www\yii\yii\web\CController.php(292): CFilterChain->run()
+#6 D:\svn\wamp\www\yii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): CController->run('admin')
+#8 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController('bg/item/admin')
+#9 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\svn\wamp\www\yii\appone\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/appone/index.php?r=bg/item/admin
+HTTP_REFERER=http://www.myapp.com/appone/index.php?r=bg/item/view&id=1
+---
+2012/11/05 10:35:34 [error] [php] Undefined variable: _SESSION (D:\svn\wamp\www\yii\appone\protected\components\Qqmember.php:132)
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\svn\wamp\www\yii\yii\web\CController.php(287): SiteController->runAction()
+#2 D:\svn\wamp\www\yii\yii\web\CController.php(266): SiteController->runActionWithFilters()
+#3 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): SiteController->run()
+#4 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController()
+#5 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#6 D:\svn\wamp\www\yii\appone\index.php(13): CWebApplication->run()
+REQUEST_URI=/appone/index.php
+in D:\svn\wamp\www\yii\appone\protected\components\Qqmember.php (132)
+in D:\svn\wamp\www\yii\appone\protected\controllers\SiteController.php (33)
+in D:\svn\wamp\www\yii\appone\index.php (13)
+2012/11/05 10:35:36 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in D:\svn\wamp\www\yii\yii\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 D:\svn\wamp\www\yii\yii\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\svn\wamp\www\yii\yii\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\svn\wamp\www\yii\yii\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\svn\wamp\www\yii\yii\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\svn\wamp\www\yii\yii\web\CController.php(292): CFilterChain->run()
+#6 D:\svn\wamp\www\yii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): CController->run('admin')
+#8 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController('bg/item/admin')
+#9 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\svn\wamp\www\yii\appone\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/appone/index.php?r=bg/item/admin
+HTTP_REFERER=http://www.myapp.com/appone/index.php?r=bg/item/view&id=1
+---
+2012/11/05 10:35:37 [error] [php] Undefined variable: _SESSION (D:\svn\wamp\www\yii\appone\protected\components\Qqmember.php:132)
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\svn\wamp\www\yii\yii\web\CController.php(287): SiteController->runAction()
+#2 D:\svn\wamp\www\yii\yii\web\CController.php(266): SiteController->runActionWithFilters()
+#3 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): SiteController->run()
+#4 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController()
+#5 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#6 D:\svn\wamp\www\yii\appone\index.php(13): CWebApplication->run()
+REQUEST_URI=/appone/index.php
+in D:\svn\wamp\www\yii\appone\protected\components\Qqmember.php (132)
+in D:\svn\wamp\www\yii\appone\protected\controllers\SiteController.php (33)
+in D:\svn\wamp\www\yii\appone\index.php (13)
+2012/11/05 10:36:16 [error] [php] Undefined variable: _SESSION (D:\svn\wamp\www\yii\appone\protected\components\Qqmember.php:132)
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\svn\wamp\www\yii\yii\web\CController.php(287): SiteController->runAction()
+#2 D:\svn\wamp\www\yii\yii\web\CController.php(266): SiteController->runActionWithFilters()
+#3 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): SiteController->run()
+#4 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController()
+#5 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#6 D:\svn\wamp\www\yii\appone\index.php(13): CWebApplication->run()
+REQUEST_URI=/appone/index.php
+in D:\svn\wamp\www\yii\appone\protected\components\Qqmember.php (132)
+in D:\svn\wamp\www\yii\appone\protected\controllers\SiteController.php (33)
+in D:\svn\wamp\www\yii\appone\index.php (13)
+2012/11/05 10:36:17 [error] [php] Undefined variable: _SESSION (D:\svn\wamp\www\yii\appone\protected\components\Qqmember.php:132)
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\svn\wamp\www\yii\yii\web\CController.php(287): SiteController->runAction()
+#2 D:\svn\wamp\www\yii\yii\web\CController.php(266): SiteController->runActionWithFilters()
+#3 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): SiteController->run()
+#4 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController()
+#5 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#6 D:\svn\wamp\www\yii\appone\index.php(13): CWebApplication->run()
+REQUEST_URI=/appone/index.php
+in D:\svn\wamp\www\yii\appone\protected\components\Qqmember.php (132)
+in D:\svn\wamp\www\yii\appone\protected\controllers\SiteController.php (33)
+in D:\svn\wamp\www\yii\appone\index.php (13)
+2012/11/05 10:48:03 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in D:\svn\wamp\www\yii\yii\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 D:\svn\wamp\www\yii\yii\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\svn\wamp\www\yii\yii\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\svn\wamp\www\yii\yii\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\svn\wamp\www\yii\yii\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\svn\wamp\www\yii\yii\web\CController.php(292): CFilterChain->run()
+#6 D:\svn\wamp\www\yii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): CController->run('admin')
+#8 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController('bg/category/adm...')
+#9 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\svn\wamp\www\yii\appone\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/appone/index.php?r=bg/category/admin
+HTTP_REFERER=http://www.myapp.com/appone/index.php?r=bg/item/admin
+---
+2012/11/05 10:48:07 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in D:\svn\wamp\www\yii\yii\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 D:\svn\wamp\www\yii\yii\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 D:\svn\wamp\www\yii\yii\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\svn\wamp\www\yii\yii\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\svn\wamp\www\yii\yii\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\svn\wamp\www\yii\yii\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\svn\wamp\www\yii\yii\web\CController.php(292): CFilterChain->run()
+#6 D:\svn\wamp\www\yii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(276): CController->run('admin')
+#8 D:\svn\wamp\www\yii\yii\web\CWebApplication.php(135): CWebApplication->runController('bg/category/adm...')
+#9 D:\svn\wamp\www\yii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\svn\wamp\www\yii\appone\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/appone/index.php?r=bg/category/admin
+HTTP_REFERER=http://www.myapp.com/appone/index.php?r=bg/item/admin
+---

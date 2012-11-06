@@ -31,10 +31,4 @@ class Helper extends CController
 		}
 		return $result;
 	}
-
-    //链接打开方式修改
-    public static function targetChange($str, $target="_self"){
-           return str_replace("<a ", "<a target='{$target}' ", $str);
-    }
-
 }
