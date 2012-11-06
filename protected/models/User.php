@@ -72,16 +72,16 @@ class User extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'uid' => 'Uid',
-			'openid' => 'Openid',
-			'nickname' => 'Nickname',
-			'ctime' => 'Ctime',
-			'score' => 'Score',
-			'head' => 'Head',
-			'share_time' => 'Share Time',
-			'fav_time' => 'Fav Time',
-			'gender' => 'Gender',
-			'is_follow' => 'Is Follow',
+			'uid' => Yii::t('bg','Uid'),
+			'openid' => Yii::t('bg,','Openid'),
+			'nickname' => Yii::t('bg','Nickname'),
+			'ctime' => Yii::t('bg','Ctime'),
+			'score' => Yii::t('bg','Score'),
+			'head' => Yii::t('bg','Head'),
+			'share_time' => Yii::t('bg','Share Time'),
+			'fav_time' => Yii::t('bg','Fav Time'),
+			'gender' => Yii::t('bg','Gender'),
+			'is_follow' => Yii::t('bg','Is Follow'),
 		);
 	}
 

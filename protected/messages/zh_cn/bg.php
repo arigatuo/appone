@@ -26,9 +26,29 @@ return array(
     'Category Name' => '分类名',
     'Ctime' => '创建时间',
 
-    'List' => '分类列表',
-    'Create' => '创建',
+    'List' => '列表',
+    'Create' => '新建',
     'Update' => '更改',
     'Delete' => '删除',
     'Manage' => '总览',
+
+    'Typeid' => '类型',
+    'Typename' => '类型名称',
+
+    'type_id' => '类型',
+
+    'Uid' => '用户id',
+    'Nickname' => '昵称',
+    'Score' => '积分',
+    'Head' => '头像',
+    'Sahre Time' => '分享次数',
+    'Fav Time' => '喜欢次数',
+    'Gender' => '性别',
+    'Is Follow' => '是否关注',
+
+    'Comment Head id' => '评论头像id',
+    'Comment Head' => '评论头像',
+
+    'Comment Text Id' => '评论文字id',
+    'Comment Text' => '评论文字',
 );

@@ -23,6 +23,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
+<!--
 <h1>Manage Items</h1>
 
 <p>
@@ -30,11 +31,12 @@ You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&g
 or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
 </p>
 
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
+<?php /* echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
 <div class="search-form" style="display:none">
 <?php $this->renderPartial('_search',array(
 	'model'=>$model,
-)); ?>
+)); */ ?>
+
 </div><!-- search-form -->
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
@@ -43,11 +45,28 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'filter'=>$model,
 	'columns'=>array(
 		'item_id',
-		'price',
-		'special_price',
 		'title',
-		'endtime',
-		'is_free',
+        'price',
+        'special_price',
+        array(
+          'name' => 'category_id',
+          'value' => 'Category::model()->findByPk($data->category_id)->getAttribute("category_name")',
+        ),
+        array(
+          'name' => 'type_id',
+          'value' => 'Type::model()->findByPk($data->type_id)->getAttribute("typename")',
+        ),
+        /*
+        array(
+          'name' => 'is_free',
+          'value' => ' $data->is_free ? "是" : "否" ',
+        ),
+        */
+        array(
+          'name' => 'photo',
+          'value' => 'CHtml::image($data->photo, $data->title, array("width"=>"100px", "height"=>"100px"))',
+          'type' => 'raw',
+        ),
 		/*
 		'category_id',
 		'pieces',
@@ -55,9 +74,9 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'share_time',
 		'fav_time',
 		'already_buy',
-		'photo',
 		'is_top',
 		*/
+        'endtime',
 		array(
 			'class'=>'CButtonColumn',
 		),

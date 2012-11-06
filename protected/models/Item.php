@@ -47,11 +47,11 @@ class Item extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title, endtime, category_id, photo', 'required'),
+			array('title, endtime, category_id, photo, type_id', 'required'),
 			array('is_top', 'numerical', 'integerOnly'=>true),
 			array('price, special_price', 'numerical'),
 			array('title, photo', 'length', 'max'=>255),
-			array('endtime, category_id, pieces, share_time, fav_time, already_buy', 'length', 'max'=>10),
+			array('category_id, pieces, share_time, fav_time, already_buy', 'length', 'max'=>10),
 			array('is_free', 'length', 'max'=>1),
 			array('description', 'safe'),
 			// The following rule is used by search().
@@ -91,6 +91,7 @@ class Item extends CActiveRecord
 			'already_buy' => Yii::t('bg','Already Buy'),
 			'photo' => Yii::t('bg','Photo'),
 			'is_top' => Yii::t('bg','IsTop'),
+            'type_id' => Yii::t('bg', 'type_id'),
 		);
 	}
 
@@ -119,9 +120,20 @@ class Item extends CActiveRecord
 		$criteria->compare('already_buy',$this->already_buy,true);
 		$criteria->compare('photo',$this->photo,true);
 		$criteria->compare('is_top',$this->is_top);
+        $criteria->compare('type_id',$this->type_id);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
 	}
+
+    public function beforeSave(){
+        $this->endtime = strtotime($this->endtime);
+        return parent::beforeSave();
+    }
+
+    public function afterFind(){
+        $this->endtime = date("Y-m-d H:i:s", $this->endtime);
+    }
+
 }

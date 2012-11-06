@@ -1,6 +1,6 @@
 <?php
 $this->breadcrumbs=array(
-	'Categories'=>array('index'),
+	'Types'=>array('index'),
 	'Manage',
 );
 
@@ -9,22 +9,24 @@ $this->menu=array(
 	array('label'=>Yii::t('bg','Create'), 'url'=>array('create')),
 );
 
+/*
 Yii::app()->clientScript->registerScript('search', "
 $('.search-button').click(function(){
 	$('.search-form').toggle();
 	return false;
 });
 $('.search-form form').submit(function(){
-	$.fn.yiiGridView.update('category-grid', {
+	$.fn.yiiGridView.update('type-grid', {
 		data: $(this).serialize()
 	});
 	return false;
 });
 ");
+*/
 ?>
 
 <!--
-<h1>Manage Categories</h1>
+<h1>Manage Types</h1>
 
 <p>
 You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
@@ -40,13 +42,12 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 </div><!-- search-form -->
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
-	'id'=>'category-grid',
+	'id'=>'type-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
-		'category_id',
-		'category_name',
-		'ctime',
+		'typeid',
+		'typename',
 		array(
 			'class'=>'CButtonColumn',
 		),

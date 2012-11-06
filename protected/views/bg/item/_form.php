@@ -30,6 +30,13 @@
 
 
     <div class="row">
+        <?php echo $form->labelEx($model,'type_id'); ?>
+        <?php //echo $form->textField($model,'category_id',array('size'=>10,'maxlength'=>10)); ?>
+        <?php echo CHtml::dropDownList('Item[type_id]', $model->category_id, CHtml::listData(Type::model()->findAll(), 'typeid', 'typename') ); ?>
+        <?php echo $form->error($model,'type_id'); ?>
+    </div>
+
+    <div class="row" style="display:none">
         <?php echo $form->labelEx($model,'is_top'); ?>
         <?php //echo $form->textField($model,'is_top'); ?>
         <?php echo CHtml::dropDownList('Item[is_top]', $model->is_top, array('1'=>'是', '0'=>'否') ); ?>
@@ -54,17 +61,22 @@
 		<?php /*echo $form->textField($model,'endtime',array('size'=>10,'maxlength'=>10)); ?>
 		<?php echo $form->error($model,'endtime'); */ ?>
         <?php
-            $this->widget('application.extentions.timepicker.timepicker', array(
-                'model'=>$model,
-                'name'=>'endtime',
-            ));
+            $this->widget('ext.timepicker.timepicker',
+                array(
+                    'model'=> $model,
+                    'name' => 'endtime',
+                    'options' => array(
+                    ),
+                )
+            );
         ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'is_free'); ?>
-		<?php echo $form->textField($model,'is_free',array('size'=>1,'maxlength'=>1)); ?>
-		<?php echo $form->error($model,'is_free'); ?>
+		<?php //echo $form->labelEx($model,'is_free'); ?>
+		<?php //echo $form->textField($model,'is_free',array('size'=>1,'maxlength'=>1)); ?>
+        <?php //echo CHtml::dropDownList('Item[is_free]', $model->is_free, array('1'=>'是', '0'=>'否') ); ?>
+		<?php //echo $form->error($model,'is_free'); ?>
 	</div>
 
 

@@ -32,6 +32,10 @@
 				//array('label'=>'Home', 'url'=>array('/site/index')),
                 array('label'=>'试用管理', 'url'=>array('/bg/item/admin')),
                 array('label'=>'分类管理', 'url'=>array('/bg/category/admin')),
+                array('label'=>'类型管理', 'url'=>array('/bg/type/admin')),
+                array('label'=>'用户管理', 'url'=>array('/bg/user/admin')),
+                array('label'=>'评论头像管理', 'url'=>array('/bg/commentHead/admin')),
+                array('label'=>'评论文字管理', 'url'=>array('/bg/commentText/admin')),
 				array('label'=>'登录', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'注销 ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),
