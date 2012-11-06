@@ -71,11 +71,8 @@ class Appcache extends CController
                         $cacheVal['changed'] = 0;
                         $cacheVal['lastUpdateTime'] = time();
                     }
-
-                    var_dump("changed");
                 }else{
                     $cacheVal['lastUpdateTime'] = time();
-                    var_dump("no changed");
                 }
                 Yii::app()->cache->set($cacheKey, $cacheVal, $cacheTime);
             }
