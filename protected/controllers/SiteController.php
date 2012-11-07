@@ -108,4 +108,23 @@ class SiteController extends Controller
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
 	}
+
+    public function actionTest(){
+        $theOne = Item::model()->findByPk(5)->getAttribute('share_time');
+        var_dump($theOne);
+        $rs = Appcache::getCache(5, 'share_time');
+        var_dump($rs);
+
+        echo "</br>";
+
+        $theOne = Item::model()->findByPk(5)->getAttribute('fav_time');
+        var_dump($theOne);
+        $rs = Appcache::getCache(5, 'fav_time');
+        var_dump($rs);
+    }
+
+    public function actionTest2(){
+        Appcache::setCache(5, 'share_time');
+        Appcache::setCache(5, 'fav_time');
+    }
 }

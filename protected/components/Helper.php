@@ -87,41 +87,4 @@ class Helper extends CController
         }
     }
 
-    //取得喜欢数
-    public static function getItemCacheFav($itemId){
-        $cacheKey = md5(__FUNCTION__.$itemId);
-        $cacheTime = 24 * 3600;
-        $cacheVal = Yii::app()->cache->get($cacheKey);
-
-        if($cacheVal != null){
-            ;
-        }
-    }
-
-    //添加新喜欢
-    public static function addNewFav($itemId, $uid){
-        if(!empty($itemId) && !empty($uid) && is_numeric($itemId) && is_numeric($uid)){
-            ;
-        }else{
-            die();
-        }
-        $cacheKey = md5(__FUNCTION__.$itemId);
-        $cacheTime = 24 * 3600;
-        $favInfo = Yii::app()->cache->get($cacheKey);
-
-        if(!empty($favInfo)){
-            $favInfo['favNum'] += 1;
-        }else{
-            $favInfo['favNum'] = 1;
-            Yii::app()->cache->set($cacheKey, $favInfo, $cacheTime);
-        }
-
-        $newUserFav = new UserFav;
-        $newUserFav->attributes = array(
-            'uid' => $uid,
-            'itemId' => $itemId,
-            'ctime' => time(),
-        );
-        $newUserFav->save();
-    }
 }

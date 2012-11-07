@@ -3644,3 +3644,144 @@ Stack trace:
 #10 {main}
 REQUEST_URI=/appone/index.php?r=Site/test
 ---
+2012/11/06 22:33:15 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'qq_firstApp'' in /var/www/html/yii/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/html/yii/db/CDbConnection.php(331): CDbConnection->open()
+#1 /var/www/html/yii/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /var/www/html/yii/base/CModule.php(388): CDbConnection->init()
+#3 /var/www/html/yii/base/CModule.php(104): CModule->getComponent('db')
+#4 /var/www/html/yii/gii/generators/model/ModelCode.php(57): CModule->__get('db')
+#5 /var/www/html/yii/web/CFormModel.php(40): ModelCode->init()
+#6 /var/www/html/yii/gii/CCodeGenerator.php(154): CFormModel->__construct()
+#7 /var/www/html/yii/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 /var/www/html/yii/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 /var/www/html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /var/www/html/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /var/www/html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/yii/web/CWebApplication.php(283): CController->run('')
+#13 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('gii/model')
+#14 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /var/www/html/appone/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/appone/index.php?r=gii/model
+HTTP_REFERER=http://www.myapp.com/appone/index.php?r=gii/default/index
+---
+2012/11/06 22:41:28 [error] [exception.CException] exception 'CException' with message 'CMemCache requires PHP memcache extension to be loaded.' in /var/www/html/yii/caching/CMemCache.php:117
+Stack trace:
+#0 /var/www/html/yii/caching/CMemCache.php(90): CMemCache->getMemCache()
+#1 /var/www/html/yii/base/CModule.php(388): CMemCache->init()
+#2 /var/www/html/yii/base/CModule.php(104): CModule->getComponent('cache')
+#3 /var/www/html/appone/protected/controllers/SiteController.php(113): CModule->__get('cache')
+#4 /var/www/html/yii/web/actions/CInlineAction.php(50): SiteController->actionTest()
+#5 /var/www/html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /var/www/html/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#7 /var/www/html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/yii/web/CWebApplication.php(283): CController->run('test')
+#9 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('Site/test')
+#10 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/appone/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/appone/index.php?r=Site/test
+---
+2012/11/06 22:50:56 [error] [exception.CException] exception 'CException' with message 'CMemCache requires PHP memcache extension to be loaded.' in /var/www/html/yii/caching/CMemCache.php:117
+Stack trace:
+#0 /var/www/html/yii/caching/CMemCache.php(90): CMemCache->getMemCache()
+#1 /var/www/html/yii/base/CModule.php(388): CMemCache->init()
+#2 /var/www/html/yii/base/CModule.php(104): CModule->getComponent('cache')
+#3 /var/www/html/appone/protected/controllers/SiteController.php(113): CModule->__get('cache')
+#4 /var/www/html/yii/web/actions/CInlineAction.php(50): SiteController->actionTest()
+#5 /var/www/html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /var/www/html/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#7 /var/www/html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/yii/web/CWebApplication.php(283): CController->run('test')
+#9 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('Site/test')
+#10 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/appone/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/appone/index.php?r=Site/test
+---
+2012/11/06 22:50:56 [error] [exception.CException] exception 'CException' with message 'CMemCache requires PHP memcache extension to be loaded.' in /var/www/html/yii/caching/CMemCache.php:117
+Stack trace:
+#0 /var/www/html/yii/caching/CMemCache.php(90): CMemCache->getMemCache()
+#1 /var/www/html/yii/base/CModule.php(388): CMemCache->init()
+#2 /var/www/html/yii/base/CModule.php(104): CModule->getComponent('cache')
+#3 /var/www/html/appone/protected/controllers/SiteController.php(113): CModule->__get('cache')
+#4 /var/www/html/yii/web/actions/CInlineAction.php(50): SiteController->actionTest()
+#5 /var/www/html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /var/www/html/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#7 /var/www/html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/yii/web/CWebApplication.php(283): CController->run('test')
+#9 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('Site/test')
+#10 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/appone/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/appone/index.php?r=Site/test
+---
+2012/11/06 23:22:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "test" 动作.' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('test')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('test')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('site/test')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/appone/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/appone/index.php?r=site/test
+---
+2012/11/06 23:22:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "test" 动作.' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('test')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('test')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('Site/test')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/appone/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/appone/index.php?r=Site/test
+---
+2012/11/06 23:31:00 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qq_firstapp.qfa_user_fav' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `qfa_user_fav`.
+in /var/www/html/appone/protected/components/Appcache.php (40)
+in /var/www/html/appone/protected/controllers/SiteController.php (113)
+in /var/www/html/appone/index.php (13)
+2012/11/06 23:31:00 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "UserFav" 对应的 table "qfa_user_fav".' in /var/www/html/yii/db/ar/CActiveRecord.php:2312
+Stack trace:
+#0 /var/www/html/yii/db/ar/CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(UserFav))
+#1 /var/www/html/yii/db/ar/CActiveRecord.php(403): CActiveRecord::model('UserFav')
+#2 /var/www/html/yii/db/ar/CActiveRecord.php(78): CActiveRecord->getMetaData()
+#3 /var/www/html/appone/protected/components/Appcache.php(40): CActiveRecord->__construct()
+#4 /var/www/html/appone/protected/controllers/SiteController.php(113): Appcache::addNewFav(3, 1)
+#5 /var/www/html/yii/web/actions/CInlineAction.php(50): SiteController->actionTest()
+#6 /var/www/html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#7 /var/www/html/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#8 /var/www/html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/html/yii/web/CWebApplication.php(283): CController->run('test')
+#10 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('Site/test')
+#11 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /var/www/html/appone/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/appone/index.php?r=Site/test
+---
+2012/11/07 00:46:53 [error] [php] Indirect modification of overloaded property Item::$attributes has no effect (/var/www/html/appone/protected/components/Appcache.php:61)
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(309): CInlineAction->runWithParams()
+#1 /var/www/html/yii/web/CController.php(287): SiteController->runAction()
+#2 /var/www/html/yii/web/CController.php(266): SiteController->runActionWithFilters()
+#3 /var/www/html/yii/web/CWebApplication.php(283): SiteController->run()
+#4 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController()
+#5 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/appone/index.php(13): CWebApplication->run()
+REQUEST_URI=/appone/index.php?r=Site/test
+in /var/www/html/appone/protected/components/Appcache.php (61)
+in /var/www/html/appone/protected/controllers/SiteController.php (113)
+in /var/www/html/appone/index.php (13)
+2012/11/07 00:59:15 [error] [php] Use of undefined constant KEY_HEAD - assumed 'KEY_HEAD' (/var/www/html/appone/protected/components/Appcache.php:53)
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(309): CInlineAction->runWithParams()
+#1 /var/www/html/yii/web/CController.php(287): SiteController->runAction()
+#2 /var/www/html/yii/web/CController.php(266): SiteController->runActionWithFilters()
+#3 /var/www/html/yii/web/CWebApplication.php(283): SiteController->run()
+#4 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController()
+#5 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/appone/index.php(13): CWebApplication->run()
+REQUEST_URI=/appone/index.php?r=Site/test
+in /var/www/html/appone/protected/components/Appcache.php (53)
+in /var/www/html/appone/protected/controllers/SiteController.php (115)
+in /var/www/html/appone/index.php (13)
