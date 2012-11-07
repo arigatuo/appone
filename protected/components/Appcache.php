@@ -66,10 +66,12 @@ class Appcache extends CController
                 //如果状态改变
                 if(!empty($cacheVal['changed']) && $cacheVal['changed'] == 1){
                     $theOne = Item::model()->findByPk($itemId);
-                    $theOne->setAttribute($type, $cacheVal['times']);
-                    if($theOne->update()){
-                        $cacheVal['changed'] = 0;
-                        $cacheVal['lastUpdateTime'] = time();
+                    if($theOne != null){
+                        $theOne->setAttribute($type, $cacheVal['times']);
+                        if($theOne->update()){
+                            $cacheVal['changed'] = 0;
+                            $cacheVal['lastUpdateTime'] = time();
+                        }
                     }
                 }else{
                     $cacheVal['lastUpdateTime'] = time();
@@ -77,13 +79,16 @@ class Appcache extends CController
                 Yii::app()->cache->set($cacheKey, $cacheVal, $cacheTime);
             }
         }else{
-            $theOneAttribute = Item::model()->findByPk($itemId)->getAttribute($type);
-            $cacheVal = array(
-                'times' => $theOneAttribute,
-                'lastUpdateTime' => time(),
-                'changed' => 0,
-            );
-            Yii::app()->cache->set($cacheKey, $cacheVal, $cacheTime);
+            $theOne = Item::model()->findByPk($itemId);
+            if($theOne != null){
+                $theOneAttribute = $theOne->getAttribute($type);
+                $cacheVal = array(
+                    'times' => $theOneAttribute,
+                    'lastUpdateTime' => time(),
+                    'changed' => 0,
+                );
+                Yii::app()->cache->set($cacheKey, $cacheVal, $cacheTime);
+            }
         }
         return $cacheVal['times'];
     }
