@@ -89,4 +89,33 @@ class Comment extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+
+    //根据itemId取得评论列表
+    public static function getCommentsByItemId($itemId){
+        $criteria = new CDbCriteria();
+        $criteria->addCondition("item_id={$itemId}");
+        $criteria->order = "comment_id desc";
+        $criteria->limit = 3;
+
+        $comments = Comment::model()->findAll($criteria);
+
+        if($comments != null){
+            $return = array();
+            foreach($comments as $comment){
+                $commentAttributes = $comment->getAttributes();
+                $pic = CommentHead::model()->findByPk($commentAttributes['comment_head_id']);
+                $text = CommentText::model()->findByPk($commentAttributes['comment_text_id']);
+                if(!empty($pic) && !empty($text)){
+                    $pic_url = $pic->getAttribute('comment_head');
+                    $text = $text->getAttribute('comment_text');
+
+                    $return[] = array(
+                        Yii::app()->baseUrl."/".$pic_url, $text
+                    );
+                }
+            }
+
+            return $return;
+        }
+    }
 }

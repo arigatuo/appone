@@ -15,11 +15,11 @@ return array(
     'Endtime' => '结束时间',
     'Is Free' => '是否免费',
     'Category' => '分类',
-    'Pieces' => '件数',
+    'Pieces' => '总件数',
     'Description' => '点评',
     'Share Time' => "分享次数",
     'FavTime' => "收藏次数",
-    'Already Buy' => "已购买次数",
+    'Already Buy' => "剩余数",
     'Photo' => '图片',
     'IsTop' => '是否置顶',
 
@@ -51,4 +51,5 @@ return array(
 
     'Comment Text Id' => '评论文字id',
     'Comment Text' => '评论文字',
+    'url' => '链接',
 );

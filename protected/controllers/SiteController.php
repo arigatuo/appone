@@ -135,4 +135,8 @@ class SiteController extends Controller
         var_dump($rs1);
         var_dump($rs2);
     }
+
+    public function actionTest3(){
+        Helper::makeMultiComments(5);
+    }
 }

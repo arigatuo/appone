@@ -4679,3 +4679,865 @@ Stack trace:
 REQUEST_URI=/appone/main/Ajax/AddTimes
 in /var/www/html/appone/protected/controllers/main/AjaxController.php (81)
 in /var/www/html/appone/index.php (13)
+2012/11/07 18:33:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "style" 动作.' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('style')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('style')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('main/Index/styl...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/appone/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/appone/main/Index/style/master.css
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 18:33:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('images')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('images')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('main/Index/imag...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/appone/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/appone/main/Index/images/del_t.jpg
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 18:33:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('images')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('images')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('main/Index/imag...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/appone/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/appone/main/Index/images/y.gif
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 18:33:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('js')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('main/Index/js/j...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/appone/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/appone/main/Index/js/jquery.js
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 18:33:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "style" 动作.' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('style')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('style')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('main/Index/styl...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/appone/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/appone/main/Index/style/base.css
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 18:33:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('images')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('images')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('main/Index/imag...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/appone/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/appone/main/Index/images/del_310310.jpg
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 18:33:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('images')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('images')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('main/Index/imag...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/appone/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/appone/main/Index/images/y.gif
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 18:33:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('images')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('images')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('main/Index/imag...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/appone/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/appone/main/Index/images/del_t.jpg
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 18:33:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('images')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('images')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('main/Index/imag...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/appone/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/appone/main/Index/images/del_310310.jpg
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 18:34:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('images')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('images')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('main/Index/imag...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/appone/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/appone/main/Index/images/y.gif
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 18:34:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('images')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('images')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('main/Index/imag...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/appone/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/appone/main/Index/images/del_t.jpg
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 18:34:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('js')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('main/Index/js/j...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/appone/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/appone/main/Index/js/jquery.js
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 18:34:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('images')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('images')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('main/Index/imag...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/appone/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/appone/main/Index/images/del_310310.jpg
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 18:34:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('images')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('images')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('main/Index/imag...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/appone/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/appone/main/Index/images/y.gif
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 18:37:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('images')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('images')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('main/Index/imag...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/appone/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/appone/main/Index/images/y.gif
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 18:37:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('images')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('images')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('main/Index/imag...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/appone/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/appone/main/Index/images/del_t.jpg
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 18:37:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('js')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('main/Index/js/j...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/appone/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/appone/main/Index/js/jquery.js
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 18:37:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('images')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('images')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('main/Index/imag...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/appone/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/appone/main/Index/images/del_310310.jpg
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 18:37:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('images')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('images')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('main/Index/imag...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/appone/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/appone/main/Index/images/del_t.jpg
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 18:37:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('images')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('images')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('main/Index/imag...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/appone/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/appone/main/Index/images/del_310310.jpg
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 18:37:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('js')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('main/Index/js/j...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/appone/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/appone/main/Index/js/jquery.js
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 18:37:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('images')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('images')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('main/Index/imag...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/appone/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/appone/main/Index/images/y.gif
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 19:21:31 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'end_time' in 'where clause'. The SQL statement executed was: SELECT * FROM `qfa_item` `t` WHERE ((is_top=1) AND (type_id=1)) AND (end_time>1352287291) ORDER BY item_id desc LIMIT 10.
+in /var/www/html/appone/protected/controllers/main/IndexController.php (42)
+in /var/www/html/appone/index.php (13)
+2012/11/07 19:21:31 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'end_time' in 'where clause'. The SQL statement executed was: SELECT * FROM `qfa_item` `t` WHERE ((is_top=1) AND (type_id=1)) AND (end_time>1352287291) ORDER BY item_id desc LIMIT 10' in /var/www/html/yii/db/CDbCommand.php:528
+Stack trace:
+#0 /var/www/html/yii/db/CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/html/yii/db/ar/CActiveRecord.php(1291): CDbCommand->queryAll()
+#2 /var/www/html/yii/db/ar/CActiveRecord.php(1410): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /var/www/html/appone/protected/controllers/main/IndexController.php(42): CActiveRecord->findAll(Object(CDbCriteria))
+#4 /var/www/html/yii/web/actions/CInlineAction.php(50): IndexController->actionTryPageOne()
+#5 /var/www/html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /var/www/html/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#7 /var/www/html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/yii/web/CWebApplication.php(283): CController->run('TryPageOne')
+#9 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('main/Index/TryP...')
+#10 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/appone/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/appone/main/Index/TryPageOne
+HTTP_REFERER=http://qzone.devapp.open.qq.com/cgi-bin/devapp?qz_height=1000&qz_width=760&openid=00000000000000000000000004DA1A07&openkey=6DC81DF805B0713506E1D74AF67C38C6&pf=qzone&pfkey=dee37a2c5cf65ab9d69ae687c6a3e5ff&qz_ver=6&appcanvas=1&params=&via=QZ.APPWALL.abtest0.0
+---
+2012/11/07 19:24:41 [error] [php] Undefined index:  (/var/www/html/appone/protected/views/main/index/index.php:5)
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(870): IndexController->renderFile()
+#1 /var/www/html/yii/web/CController.php(783): IndexController->renderPartial()
+#2 /var/www/html/appone/protected/controllers/main/IndexController.php(50): IndexController->render()
+#3 /var/www/html/yii/web/actions/CInlineAction.php(50): IndexController->actionTryPageOne()
+#4 /var/www/html/yii/web/CController.php(309): CInlineAction->runWithParams()
+#5 /var/www/html/yii/web/CController.php(287): IndexController->runAction()
+#6 /var/www/html/yii/web/CController.php(266): IndexController->runActionWithFilters()
+#7 /var/www/html/yii/web/CWebApplication.php(283): IndexController->run()
+#8 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/appone/index.php(13): CWebApplication->run()
+REQUEST_URI=/appone/main/Index/TryPageOne
+in /var/www/html/appone/protected/views/main/index/index.php (5)
+in /var/www/html/appone/protected/controllers/main/IndexController.php (50)
+in /var/www/html/appone/index.php (13)
+2012/11/07 19:24:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "3213123"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('3213123')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/3213123
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 19:24:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "3213123"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('3213123')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/3213123
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 19:29:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "3213123"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('3213123')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/3213123
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 19:30:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "3213123"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('3213123')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/3213123
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 19:30:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "3213123"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('3213123')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/3213123
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 19:33:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "3213123"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('3213123')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/3213123
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 19:42:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/d58b89f442dbb6f24c02e5bcdcac81fc.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/d58b89f442dbb6f24c02e5bcdcac81fc.jpg
+HTTP_REFERER=http://www.myapp.com/appone/bg/commentHead/admin
+---
+2012/11/07 19:42:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/1143e4c9e25e6d7e00be69bbf00a0311.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/1143e4c9e25e6d7e00be69bbf00a0311.jpg
+HTTP_REFERER=http://www.myapp.com/appone/bg/commentHead/admin
+---
+2012/11/07 19:42:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/cf26df8be6ad2347015a33631bdf9ccf.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/cf26df8be6ad2347015a33631bdf9ccf.jpg
+HTTP_REFERER=http://www.myapp.com/appone/bg/commentHead/admin
+---
+2012/11/07 19:42:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/bd5b4d05e1c0f5cc8c0d2f0d0a248bfe.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/bd5b4d05e1c0f5cc8c0d2f0d0a248bfe.jpg
+HTTP_REFERER=http://www.myapp.com/appone/bg/commentHead/admin
+---
+2012/11/07 19:42:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/7115c4a5a6268144f4d24f45311075b4.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/7115c4a5a6268144f4d24f45311075b4.jpg
+HTTP_REFERER=http://www.myapp.com/appone/bg/commentHead/admin
+---
+2012/11/07 19:42:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/7e3a6f22cabf48df84e76b1c43fd3d9e.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/7e3a6f22cabf48df84e76b1c43fd3d9e.jpg
+HTTP_REFERER=http://www.myapp.com/appone/bg/commentHead/admin
+---
+2012/11/07 19:44:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/bd5b4d05e1c0f5cc8c0d2f0d0a248bfe.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/bd5b4d05e1c0f5cc8c0d2f0d0a248bfe.jpg
+HTTP_REFERER=http://www.myapp.com/appone/bg/commentHead/admin
+---
+2012/11/07 19:44:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/7e3a6f22cabf48df84e76b1c43fd3d9e.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/7e3a6f22cabf48df84e76b1c43fd3d9e.jpg
+HTTP_REFERER=http://www.myapp.com/appone/bg/commentHead/admin
+---
+2012/11/07 19:44:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/cf26df8be6ad2347015a33631bdf9ccf.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/cf26df8be6ad2347015a33631bdf9ccf.jpg
+HTTP_REFERER=http://www.myapp.com/appone/bg/commentHead/admin
+---
+2012/11/07 19:44:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/1143e4c9e25e6d7e00be69bbf00a0311.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/1143e4c9e25e6d7e00be69bbf00a0311.jpg
+HTTP_REFERER=http://www.myapp.com/appone/bg/commentHead/admin
+---
+2012/11/07 19:44:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/d58b89f442dbb6f24c02e5bcdcac81fc.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/d58b89f442dbb6f24c02e5bcdcac81fc.jpg
+HTTP_REFERER=http://www.myapp.com/appone/bg/commentHead/admin
+---
+2012/11/07 19:44:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/7115c4a5a6268144f4d24f45311075b4.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/7115c4a5a6268144f4d24f45311075b4.jpg
+HTTP_REFERER=http://www.myapp.com/appone/bg/commentHead/admin
+---
+2012/11/07 20:26:17 [error] [exception.CException] exception 'CException' with message 'Item and its behaviors do not have a method or closure named "isNewRecord".' in /var/www/html/yii/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/db/ar/CActiveRecord.php(226): CComponent->__call('isNewRecord', Array)
+#1 /var/www/html/appone/protected/models/Item.php(134): CActiveRecord->__call('isNewRecord', Array)
+#2 /var/www/html/appone/protected/models/Item.php(134): Item->isNewRecord()
+#3 /var/www/html/yii/db/ar/CActiveRecord.php(1011): Item->beforeSave()
+#4 /var/www/html/yii/db/ar/CActiveRecord.php(796): CActiveRecord->insert(NULL)
+#5 /var/www/html/appone/protected/controllers/bg/ItemController.php(63): CActiveRecord->save()
+#6 /var/www/html/yii/web/actions/CInlineAction.php(50): ItemController->actionCreate()
+#7 /var/www/html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /var/www/html/yii/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/yii/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/yii/web/CController.php(292): CFilterChain->run()
+#14 /var/www/html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/yii/web/CWebApplication.php(283): CController->run('create')
+#16 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bg/item/create')
+#17 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /var/www/html/appone/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/appone/bg/item/create
+HTTP_REFERER=http://www.myapp.com/appone/bg/item/create
+---
+2012/11/07 21:01:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('images')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('images')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('main/Index/imag...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/appone/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/appone/main/Index/images/y.gif
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 21:01:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('images')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('images')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('main/Index/imag...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/appone/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/appone/main/Index/images/y.gif
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 21:01:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('images')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('images')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('main/Index/imag...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/appone/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/appone/main/Index/images/y.gif
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 21:01:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('images')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('images')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('main/Index/imag...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/appone/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/appone/main/Index/images/y.gif
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 21:06:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/d58b89f442dbb6f24c02e5bcdcac81fc.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/d58b89f442dbb6f24c02e5bcdcac81fc.jpg
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 21:06:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/bd5b4d05e1c0f5cc8c0d2f0d0a248bfe.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/bd5b4d05e1c0f5cc8c0d2f0d0a248bfe.jpg
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 21:06:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/7115c4a5a6268144f4d24f45311075b4.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/7115c4a5a6268144f4d24f45311075b4.jpg
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 21:07:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/d58b89f442dbb6f24c02e5bcdcac81fc.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/d58b89f442dbb6f24c02e5bcdcac81fc.jpg
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 21:07:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/7115c4a5a6268144f4d24f45311075b4.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/7115c4a5a6268144f4d24f45311075b4.jpg
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 21:07:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/bd5b4d05e1c0f5cc8c0d2f0d0a248bfe.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/bd5b4d05e1c0f5cc8c0d2f0d0a248bfe.jpg
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 21:08:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/d58b89f442dbb6f24c02e5bcdcac81fc.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/d58b89f442dbb6f24c02e5bcdcac81fc.jpg
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 21:08:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/bd5b4d05e1c0f5cc8c0d2f0d0a248bfe.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/bd5b4d05e1c0f5cc8c0d2f0d0a248bfe.jpg
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 21:08:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/7115c4a5a6268144f4d24f45311075b4.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/7115c4a5a6268144f4d24f45311075b4.jpg
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 21:08:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/d58b89f442dbb6f24c02e5bcdcac81fc.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/d58b89f442dbb6f24c02e5bcdcac81fc.jpg
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 21:08:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/7115c4a5a6268144f4d24f45311075b4.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/7115c4a5a6268144f4d24f45311075b4.jpg
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 21:08:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/bd5b4d05e1c0f5cc8c0d2f0d0a248bfe.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/bd5b4d05e1c0f5cc8c0d2f0d0a248bfe.jpg
+HTTP_REFERER=http://www.myapp.com/appone/main/Index/TryPageOne
+---
+2012/11/07 21:09:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/cf26df8be6ad2347015a33631bdf9ccf.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/cf26df8be6ad2347015a33631bdf9ccf.jpg
+HTTP_REFERER=http://www.myapp.com/appone/bg/commentHead/admin
+---
+2012/11/07 21:09:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/7115c4a5a6268144f4d24f45311075b4.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/7115c4a5a6268144f4d24f45311075b4.jpg
+HTTP_REFERER=http://www.myapp.com/appone/bg/commentHead/admin
+---
+2012/11/07 21:09:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/1143e4c9e25e6d7e00be69bbf00a0311.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/1143e4c9e25e6d7e00be69bbf00a0311.jpg
+HTTP_REFERER=http://www.myapp.com/appone/bg/commentHead/admin
+---
+2012/11/07 21:09:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/bd5b4d05e1c0f5cc8c0d2f0d0a248bfe.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/bd5b4d05e1c0f5cc8c0d2f0d0a248bfe.jpg
+HTTP_REFERER=http://www.myapp.com/appone/bg/commentHead/admin
+---
+2012/11/07 21:09:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/d58b89f442dbb6f24c02e5bcdcac81fc.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/d58b89f442dbb6f24c02e5bcdcac81fc.jpg
+HTTP_REFERER=http://www.myapp.com/appone/bg/commentHead/admin
+---
+2012/11/07 21:09:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/7e3a6f22cabf48df84e76b1c43fd3d9e.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/7e3a6f22cabf48df84e76b1c43fd3d9e.jpg
+HTTP_REFERER=http://www.myapp.com/appone/bg/commentHead/admin
+---
+2012/11/07 21:10:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/bd5b4d05e1c0f5cc8c0d2f0d0a248bfe.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/bd5b4d05e1c0f5cc8c0d2f0d0a248bfe.jpg
+HTTP_REFERER=http://www.myapp.com/appone/bg/commentHead/admin
+---
+2012/11/07 21:10:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/cf26df8be6ad2347015a33631bdf9ccf.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/cf26df8be6ad2347015a33631bdf9ccf.jpg
+HTTP_REFERER=http://www.myapp.com/appone/bg/commentHead/admin
+---
+2012/11/07 21:10:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/1143e4c9e25e6d7e00be69bbf00a0311.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/1143e4c9e25e6d7e00be69bbf00a0311.jpg
+HTTP_REFERER=http://www.myapp.com/appone/bg/commentHead/admin
+---
+2012/11/07 21:10:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/7e3a6f22cabf48df84e76b1c43fd3d9e.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/7e3a6f22cabf48df84e76b1c43fd3d9e.jpg
+HTTP_REFERER=http://www.myapp.com/appone/bg/commentHead/admin
+---
+2012/11/07 21:10:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/7115c4a5a6268144f4d24f45311075b4.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/7115c4a5a6268144f4d24f45311075b4.jpg
+HTTP_REFERER=http://www.myapp.com/appone/bg/commentHead/admin
+---
+2012/11/07 21:10:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/d58b89f442dbb6f24c02e5bcdcac81fc.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/d58b89f442dbb6f24c02e5bcdcac81fc.jpg
+HTTP_REFERER=http://www.myapp.com/appone/bg/commentHead/admin
+---
+2012/11/07 21:11:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/7115c4a5a6268144f4d24f45311075b4.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/7115c4a5a6268144f4d24f45311075b4.jpg
+HTTP_REFERER=http://www.myapp.com/appone/bg/commentHead/admin
+---
+2012/11/07 21:11:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/1143e4c9e25e6d7e00be69bbf00a0311.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/1143e4c9e25e6d7e00be69bbf00a0311.jpg
+HTTP_REFERER=http://www.myapp.com/appone/bg/commentHead/admin
+---
+2012/11/07 21:11:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/d58b89f442dbb6f24c02e5bcdcac81fc.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/d58b89f442dbb6f24c02e5bcdcac81fc.jpg
+HTTP_REFERER=http://www.myapp.com/appone/bg/commentHead/admin
+---
+2012/11/07 21:11:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/bd5b4d05e1c0f5cc8c0d2f0d0a248bfe.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/bd5b4d05e1c0f5cc8c0d2f0d0a248bfe.jpg
+HTTP_REFERER=http://www.myapp.com/appone/bg/commentHead/admin
+---
+2012/11/07 21:11:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/cf26df8be6ad2347015a33631bdf9ccf.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/cf26df8be6ad2347015a33631bdf9ccf.jpg
+HTTP_REFERER=http://www.myapp.com/appone/bg/commentHead/admin
+---
+2012/11/07 21:11:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/7115c4a5a6268144f4d24f45311075b4.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/7115c4a5a6268144f4d24f45311075b4.jpg
+HTTP_REFERER=http://www.myapp.com/appone/bg/commentHead/admin
+---
+2012/11/07 21:11:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/bd5b4d05e1c0f5cc8c0d2f0d0a248bfe.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/bd5b4d05e1c0f5cc8c0d2f0d0a248bfe.jpg
+HTTP_REFERER=http://www.myapp.com/appone/bg/commentHead/admin
+---
+2012/11/07 21:11:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/d58b89f442dbb6f24c02e5bcdcac81fc.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/d58b89f442dbb6f24c02e5bcdcac81fc.jpg
+HTTP_REFERER=http://www.myapp.com/appone/bg/commentHead/admin
+---
+2012/11/07 21:11:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/1143e4c9e25e6d7e00be69bbf00a0311.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/1143e4c9e25e6d7e00be69bbf00a0311.jpg
+HTTP_REFERER=http://www.myapp.com/appone/bg/commentHead/admin
+---
+2012/11/07 21:11:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/bd5b4d05e1c0f5cc8c0d2f0d0a248bfe.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/bd5b4d05e1c0f5cc8c0d2f0d0a248bfe.jpg
+HTTP_REFERER=http://www.myapp.com/appone/bg/commentHead/admin
+---
+2012/11/07 21:11:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/1143e4c9e25e6d7e00be69bbf00a0311.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/1143e4c9e25e6d7e00be69bbf00a0311.jpg
+HTTP_REFERER=http://www.myapp.com/appone/bg/commentHead/admin
+---
+2012/11/07 21:11:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/d58b89f442dbb6f24c02e5bcdcac81fc.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/d58b89f442dbb6f24c02e5bcdcac81fc.jpg
+HTTP_REFERER=http://www.myapp.com/appone/bg/commentHead/admin
+---
+2012/11/07 21:11:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/bd5b4d05e1c0f5cc8c0d2f0d0a248bfe.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/bd5b4d05e1c0f5cc8c0d2f0d0a248bfe.jpg
+HTTP_REFERER=http://www.myapp.com/appone/bg/commentHead/admin
+---
+2012/11/07 21:11:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/d58b89f442dbb6f24c02e5bcdcac81fc.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/d58b89f442dbb6f24c02e5bcdcac81fc.jpg
+HTTP_REFERER=http://www.myapp.com/appone/bg/commentHead/admin
+---
+2012/11/07 21:11:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121106/bd5b4d05e1c0f5cc8c0d2f0d0a248bfe.jpg"。' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('upload/20121106...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/appone/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appone/upload/20121106/bd5b4d05e1c0f5cc8c0d2f0d0a248bfe.jpg
+HTTP_REFERER=http://www.myapp.com/appone/bg/commentHead/admin
+---

@@ -47,7 +47,7 @@ class Item extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title, endtime, category_id, photo, type_id', 'required'),
+			array('title, endtime, category_id, photo, type_id, url', 'required'),
 			array('is_top', 'numerical', 'integerOnly'=>true),
 			array('price, special_price', 'numerical'),
 			array('title, photo', 'length', 'max'=>255),
@@ -92,6 +92,7 @@ class Item extends CActiveRecord
 			'photo' => Yii::t('bg','Photo'),
 			'is_top' => Yii::t('bg','IsTop'),
             'type_id' => Yii::t('bg', 'type_id'),
+            'url' => Yii::t('bg', 'url'),
 		);
 	}
 
@@ -121,6 +122,7 @@ class Item extends CActiveRecord
 		$criteria->compare('photo',$this->photo,true);
 		$criteria->compare('is_top',$this->is_top);
         $criteria->compare('type_id',$this->type_id);
+        $criteria->compare('type_id',$this->url);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -129,6 +131,9 @@ class Item extends CActiveRecord
 
     public function beforeSave(){
         $this->endtime = strtotime($this->endtime);
+        if($this->isNewRecord){
+            $this->ctime = time();
+        }
         return parent::beforeSave();
     }
 
@@ -144,5 +149,4 @@ class Item extends CActiveRecord
         }
         return parent::afterSave();
     }
-
 }

@@ -16,6 +16,12 @@
     </div>
 
     <div class="row">
+        <?php echo $form->labelEx($model,'url'); ?>
+        <?php echo $form->textField($model,'url',array('size'=>60,'maxlength'=>255)); ?>
+        <?php echo $form->error($model,'url'); ?>
+    </div>
+
+    <div class="row">
         <?php echo $form->labelEx($model,'photo'); ?>
         <?php echo $form->textField($model,'photo',array('size'=>60,'maxlength'=>255)); ?>
         <?php echo $form->error($model,'photo'); ?>
@@ -32,11 +38,11 @@
     <div class="row">
         <?php echo $form->labelEx($model,'type_id'); ?>
         <?php //echo $form->textField($model,'category_id',array('size'=>10,'maxlength'=>10)); ?>
-        <?php echo CHtml::dropDownList('Item[type_id]', $model->category_id, CHtml::listData(Type::model()->findAll(), 'typeid', 'typename') ); ?>
+        <?php echo CHtml::dropDownList('Item[type_id]', $model->type_id, CHtml::listData(Type::model()->findAll(), 'typeid', 'typename') ); ?>
         <?php echo $form->error($model,'type_id'); ?>
     </div>
 
-    <div class="row" style="display:none">
+    <div class="row">
         <?php echo $form->labelEx($model,'is_top'); ?>
         <?php //echo $form->textField($model,'is_top'); ?>
         <?php echo CHtml::dropDownList('Item[is_top]', $model->is_top, array('1'=>'是', '0'=>'否') ); ?>
@@ -86,6 +92,12 @@
 		<?php echo $form->error($model,'pieces'); ?>
 	</div>
 
+    <div class="row">
+        <?php echo $form->labelEx($model,'already_buy'); ?>
+        <?php echo $form->textField($model,'already_buy',array('size'=>10,'maxlength'=>10)); ?>
+        <?php echo $form->error($model,'already_buy'); ?>
+    </div>
+
 	<div class="row">
 		<?php echo $form->labelEx($model,'description'); ?>
 		<?php echo $form->textArea($model,'description',array('rows'=>6, 'cols'=>50)); ?>
@@ -102,12 +114,6 @@
 		<?php echo $form->labelEx($model,'fav_time'); ?>
 		<?php echo $form->textField($model,'fav_time',array('size'=>10,'maxlength'=>10)); ?>
 		<?php echo $form->error($model,'fav_time'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'already_buy'); ?>
-		<?php echo $form->textField($model,'already_buy',array('size'=>10,'maxlength'=>10)); ?>
-		<?php echo $form->error($model,'already_buy'); ?>
 	</div>
 
 	<div class="row buttons">

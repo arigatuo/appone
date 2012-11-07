@@ -33,7 +33,40 @@ class IndexController extends Controller
 
     //tabOne
     public function actionTryPageOne(){
-        $this->render('index');
+        $type_id = 1;
+        $items = self::findByCondition($type_id);
+        $this->render('index',
+                array(
+                    'items' => $items,
+                )
+        );
+    }
+
+    private function findByCondition($type_id){
+        $cacheKey = md5(__CLASS__.__FUNCTION__.$type_id);
+        $cacheTime = 5 * 60;
+        $cacheVal = Yii::app()->cache->get($cacheKey);
+
+        if($cacheVal != null){
+            $items = $cacheVal;
+        }else{
+            $criteria = new CDbCriteria();
+            /*
+            $criteria->addCondition("endtime>".time());
+            */
+            $criteria->addCondition("is_top=1");
+            $criteria->addCondition("type_id={$type_id}");
+
+            $criteria->limit = 10;
+            $criteria->order = "item_id desc";
+            $items = Item::model()->findAll($criteria);
+
+            if($items != null){
+                Yii::app()->cache->set($cacheKey, $items, $cacheTime);
+            }
+        }
+
+        return $items;
     }
 
 	// Uncomment the following methods and override them if needed
