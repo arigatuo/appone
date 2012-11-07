@@ -139,6 +139,19 @@ CREATE TABLE `qfa_user` (
 
 insert  into `qfa_user`(`uid`,`openid`,`nickname`,`ctime`,`score`,`head`,`share_time`,`fav_time`,`gender`,`is_follow`) values (9,'F43F3336D5C06A88AF709AA77AE9F630','lizhen_796ab',1352108241,0,'http://thirdapp3.qlogo.cn/qzopenapp/060b8477f7cddce47a38fdf155a691d7118ee962356781642de3965116bef898/50',0,0,1,1);
 
+/*Table structure for table `qfa_user_fav` */
+
+DROP TABLE IF EXISTS `qfa_user_fav`;
+
+CREATE TABLE `qfa_user_fav` (
+  `uid` bigint(20) unsigned NOT NULL COMMENT '用户id',
+  `itemId` bigint(20) unsigned NOT NULL COMMENT '试用id',
+  `ctime` int(10) unsigned DEFAULT NULL COMMENT '创建时间',
+  PRIMARY KEY (`uid`,`itemId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+/*Data for the table `qfa_user_fav` */
+
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
 /*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
