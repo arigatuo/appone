@@ -7,7 +7,14 @@
     <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl;?>/style/master.css">
     <script src="http://www.lady8844.com/images/jquery/jquery.min.js" type="text/javascript"></script>
     <script src="<?php echo Yii::app()->baseUrl;?>/js/tools.js" type="text/javascript"></script>
+    <?php
+        $config = new CConfiguration();
+        $config->loadFromFile("protected/config/qq_connect.php");
+        $appId = $config->itemAt("appId");
+    ?>
+    <script type="text/javascript" charset="utf-8"  src="http://fusion.qq.com/fusion_loader?appid=<?php echo $appId?>&platform=qzone"> </script>
     <script type="text/javascript">
+        var serverTime = <?php echo time()*1000; ?>;
         var tools = {
             addFav : function(item_id){
                 jQuery.ajax({
@@ -30,6 +37,13 @@
                 });
             }
         };
+        jQuery(function(){
+            fusion2.canvas.setHeight
+                    ({
+                        height : 0
+
+                    });
+        });
     </script>
 
     <script type="text/javascript">
