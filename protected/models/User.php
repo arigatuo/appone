@@ -111,4 +111,27 @@ class User extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+
+    //增加分享/收藏次数
+    //type enum { share_time, fav_time}
+    public function addTimes($userId, $type, $times=1){
+        $return = false;
+        if(!empty($userId) && is_numeric($userId) && in_array($type, array("share_time", "fav_time")) && !empty($times)
+            && is_numeric($times)){
+        }else{
+            throw new Exception('arguments error');
+        }
+
+        $theOne = self::model()->findByPk($userId);
+
+        if($theOne != null){
+            $orgVal = $theOne->getAttribute($type);
+            $theOne->setAttribute($type, $orgVal + $times);
+            if($theOne->save()){
+                $return = true;
+            }
+        }
+
+        return $return;
+    }
 }

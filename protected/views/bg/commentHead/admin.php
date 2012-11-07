@@ -47,7 +47,7 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'comment_head_id',
         array(
           'name' => 'comment_head',
-          'value' => 'CHtml::image($data->comment_head, $data->comment_head_id, array("width"=>"100px", "height"=>"100px"))',
+          'value' => 'CHtml::image(Yii::app()->baseUrl."/".$data->comment_head, $data->comment_head_id, array("width"=>"100px", "height"=>"100px"))',
           'type' => 'raw',
         ),
 		array(

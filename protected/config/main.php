@@ -7,6 +7,7 @@
 // CWebApplication properties can be configured here.
 return array(
     'language'=>'zh_cn',
+    'defaultController' => 'main/index',
 
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'qqApp',
@@ -37,16 +38,18 @@ return array(
 			'allowAutoLogin'=>true,
 		),
 		// uncomment the following to enable URLs in path-format
-		/*
 		'urlManager'=>array(
-			'urlFormat'=>'path',
+            'urlFormat'=>'path',
+            //不显示index.php(配合.htaccess或者nginx设置)
+            'caseSensitive' => true,
+            'showScriptName' => false,
+
 			'rules'=>array(
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
 		),
-		*/
         /*
 		'db'=>array(
 			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',

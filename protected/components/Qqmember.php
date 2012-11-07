@@ -69,6 +69,7 @@ class Qqmember extends CController
 
         if(!empty($_REQUEST['openid']) && !empty($_REQUEST['openkey']) && !empty($_REQUEST['pf'])){
             $newSession = new CHttpSession();
+            $newSession->open();
             $newSession['userInfo'] = array();
 
             //user_info
@@ -133,7 +134,7 @@ class Qqmember extends CController
                     $newSession['userInfo'] = $userInfo;
                 }
             }
-            var_dump($_SESSION);
+            //var_dump($newSession['userInfo']);
         }
     }
 }

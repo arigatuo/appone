@@ -5,7 +5,7 @@ class AjaxController extends Controller
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
-	public $layout='//layouts/column2';
+	public $layout = false;
 
 	/**
 	 * @return array action filters
@@ -71,5 +71,30 @@ class AjaxController extends Controller
 		
 		echo $return;// it's array
 	}
+
+    //增加分享
+    //需要参数 itemId, uid, type
+    public function actionAddTimes(){
+        $newSession = new CHttpSession();
+        $newSession->open();
+        $userInfo = $newSession->get('userInfo');
+        if(!empty($userInfo['userid']))
+            $uid = $userInfo['userid'];
+
+        if(!empty($_POST['itemId']) && !empty($uid) && is_numeric($_POST['itemId']) && is_numeric($uid)
+                    && in_array($_POST['type'], array('share_time', 'fav_time'))
+                ){
+        }else{
+            echo -1;
+            die();
+        }
+
+        $result = Appcache::setCache($_POST['itemId'], $_POST['type'], $uid);
+
+        //收藏会返回是否收藏成功
+        if($_POST['type'] == "fav_time"){
+            echo $result;
+        }
+    }
 
 }

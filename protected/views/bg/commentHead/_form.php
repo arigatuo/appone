@@ -20,13 +20,13 @@
         array(
             'id'=>'uploadpic',
             'config'=>array(
-                'action'=>Yii::app()->createUrl('bg/Ajax/Uploadimg'),
+                'action'=>Yii::app()->createUrl('main/Ajax/Uploadimg'),
                 'allowedExtensions'=>array("jpg"),//array("jpg","jpeg","gif","exe","mov" and etc...
                 'sizeLimit'=>1*1024*1024,// maximum file size in bytes
                 'onComplete'=>"js:function(id, fileName, responseJSON){
                                     var picUrl = responseJSON.folder+responseJSON.filename;
 									jQuery('#CommentHead_comment_head' ).val(picUrl);
-									jQuery('#previewImg').attr('src',picUrl);
+									jQuery('#previewImg').attr('src',baseUrl + '/' + picUrl);
 									jQuery('#previewImg').show();
                                 }",
             )

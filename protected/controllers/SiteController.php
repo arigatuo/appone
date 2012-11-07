@@ -29,8 +29,11 @@ class SiteController extends Controller
 	{
         //入口页
         //qq用户接入
+        /*
         $qqMember = new Qqmember;
         $qqMember->memberEnter();
+        */
+        $this->redirect(Yii::app()->createUrl("main/index"));
 	}
 
 	/**
@@ -110,6 +113,7 @@ class SiteController extends Controller
 	}
 
     public function actionTest(){
+        //测试设置收藏
         $theOne = Item::model()->findByPk(5)->getAttribute('share_time');
         var_dump($theOne);
         $rs = Appcache::getCache(5, 'share_time');
@@ -124,7 +128,11 @@ class SiteController extends Controller
     }
 
     public function actionTest2(){
-        Appcache::setCache(5, 'share_time');
-        Appcache::setCache(5, 'fav_time');
+        //测试设置收藏
+        $rs1 = Appcache::setCache(5, 'share_time', 10);
+        $rs2 = Appcache::setCache(5, 'fav_time', 10);
+
+        var_dump($rs1);
+        var_dump($rs2);
     }
 }
