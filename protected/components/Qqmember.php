@@ -98,6 +98,7 @@ class Qqmember extends CController
                             'openid' => $_REQUEST['openid'],
                             'openkey' => $_REQUEST['openkey'],
                             'isFans' => $isFans,
+                            'pf' => $_REQUEST['pf'],
                         );
                         $newSession['userInfo'] = $userInfo;
                     }
@@ -130,11 +131,34 @@ class Qqmember extends CController
                         'openid' => $_REQUEST['openid'],
                         'openkey' => $_REQUEST['openkey'],
                         'isFans' => $isFans,
+                        'pf' => $_REQUEST['pf'],
                     );
                     $newSession['userInfo'] = $userInfo;
                 }
             }
             //var_dump($newSession['userInfo']);
+        }
+
+
+    }
+
+    //更新是否关注状态
+    public function update_user_is_login(){
+        $session = new CHttpSession();
+        $session->open();
+        if(!empty($session['userInfo'])){
+            $userInfo = $session['userInfo'];
+            $sdk = self::newSdk();
+            if(!empty($userInfo['openid']) && !empty($userInfo['openkey']) && !empty($userInfo['pf'])){
+                $ret_is_fans = $this->is_attention($sdk, $userInfo['openid'], $userInfo['openkey'], $userInfo['pf'], $this->_followPageId);
+                if($ret_is_fans['ret'] == 0){
+                    $isFans = $ret_is_fans['is_fans'];
+                }
+                $userInfo['isFans'] = $isFans;
+                $session['userInfo'] = $userInfo;
+
+                return $isFans;
+            }
         }
     }
 }

@@ -139,4 +139,12 @@ class SiteController extends Controller
     public function actionTest3(){
         Helper::makeMultiComments(5);
     }
+
+    public function actionFlushMem(){
+        Yii::app()->cache->flush();
+    }
+
+    public function actionHtml(){
+        $this->render("html");
+    }
 }

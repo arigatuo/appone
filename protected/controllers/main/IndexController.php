@@ -2,6 +2,7 @@
 
 class IndexController extends Controller
 {
+    public $_userInfo;
     public function init(){
         $this->layout = "front_layout";
     }
@@ -35,10 +36,27 @@ class IndexController extends Controller
     public function actionTryPageOne(){
         $type_id = 1;
         $items = self::findByCondition($type_id);
+        $userInfo = self::getUserInfo();
+        $this->_userInfo = $userInfo;
+
         $this->render('index',
                 array(
                     'items' => $items,
                 )
+        );
+    }
+
+    //tabtwo
+    public function actionTryPageTwo(){
+        $type_id = 2;
+        $items = self::findByCondition($type_id);
+        $userInfo = self::getUserInfo();
+        $this->_userInfo = $userInfo;
+
+        $this->render('page2',
+            array(
+                'items' => $items,
+            )
         );
     }
 

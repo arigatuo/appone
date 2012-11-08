@@ -3,14 +3,9 @@
     foreach($items as $item){
         $itemAttributes = $item->getAttributes();
         $curUrl = $itemAttributes['url'];
-        /*
-        echo "<a class='favLink' href='javascript:tools.addFav(".$itemAttributes['item_id'].")' item_id='".$itemAttributes['item_id']."'>收藏</a>";
-        echo "<a class='favLink' href='javascript:tools.addShare(".$itemAttributes['item_id'].")' item_id='".$itemAttributes['item_id']."'>推荐</a>";
-        echo "<hr/>";
-        */
 ?>
         <li class="item">
-            <h2><img src="images/y.gif" width="37" height="36"><a href="#" target="_blank">［包邮] <?php echo $itemAttributes['title'];?></a></h2>
+            <h2><img src="<?php echo Yii::app()->baseUrl;?>/images/y.gif" width="37" height="36"><a href="javascript:fusion2.nav.open({url:'<?php echo $curUrl;?>'});" target="_blank">［包邮] <?php echo $itemAttributes['title'];?></a></h2>
             <div class="pic"><a href="javascript:fusion2.nav.open({url:'<?php echo $curUrl;?>'});"><img src="<?php echo $itemAttributes['photo'];?>" width="310" height="310"></a></div>
             <div class="txt">
                 <div class="price-try">
@@ -43,10 +38,11 @@
                     ?>
                 </ul>
                 <div class="favorite-handsel">
-                    <a href="#" target="_blank" title="收藏" class="favorite"><span>( <?php echo $itemAttributes['fav_time']; ?> )</span></a>
-                    <a href="#" target="_blank" title="请好友赠送" class="handsel"><span>( <?php echo $itemAttributes['share_time'];?> )</span></a>
+                    <a href="javascript:" id="favNumber_<?php echo $itemAttributes['item_id'];?>" xid="<?php echo $itemAttributes['item_id'];?>" title="收藏" class="favorite"><span>( <font class="number"><?php echo Appcache::getCache($itemAttributes['item_id'], 'fav_time'); ?></font> )</span></a>
+                    <a href="javascript:" id="shareNumber_<?php echo $itemAttributes['item_id'];?>" xid="<?php echo $itemAttributes['item_id'];?>" title="请好友赠送" class="handsel handsel-style2"><span>( <font class="number"><?php echo Appcache::getCache($itemAttributes['item_id'], 'share_time'); ?></font> )</span></a>
                 </div>
             </div>
+            <div class="qzone" style="display:none"><iframe src="http://open.qzone.qq.com/like?url=http%3A%2F%2Fuser.qzone.qq.com%2F625617480&type=button&width=400&height=30&style=3" allowtransparency="true" scrolling="no" border="0" frameborder="0" style="width:65px;height:30px;border:none;overflow:hidden; margin:17px 0 5px 15px;"></iframe><p>关注我，每天有新试用哦</p></div>
         </li>
 <?php
     }

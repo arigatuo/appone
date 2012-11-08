@@ -75,25 +75,35 @@ class AjaxController extends Controller
     //增加分享
     //需要参数 itemId, uid, type
     public function actionAddTimes(){
-        $newSession = new CHttpSession();
-        $newSession->open();
-        $userInfo = $newSession->get('userInfo');
-        if(!empty($userInfo['userid']))
-            $uid = $userInfo['userid'];
+        if(Yii::app()->request->isAjaxRequest){
+            $newSession = new CHttpSession();
+            $newSession->open();
+            $userInfo = $newSession->get('userInfo');
+            if(!empty($userInfo['userid']))
+                $uid = $userInfo['userid'];
 
-        if(!empty($_POST['itemId']) && !empty($uid) && is_numeric($_POST['itemId']) && is_numeric($uid)
-                    && in_array($_POST['type'], array('share_time', 'fav_time'))
-                ){
-        }else{
-            echo -1;
-            die();
+            if(!empty($_POST['itemId']) && !empty($uid) && is_numeric($_POST['itemId']) && is_numeric($uid)
+                && in_array($_POST['type'], array('share_time', 'fav_time'))
+            ){
+            }else{
+                echo -1;
+                die();
+            }
+
+            $result = Appcache::setCache($_POST['itemId'], $_POST['type'], $uid);
+
+            //收藏会返回是否收藏成功
+            if($_POST['type'] == "fav_time"){
+                echo $result;
+            }
         }
+    }
 
-        $result = Appcache::setCache($_POST['itemId'], $_POST['type'], $uid);
-
-        //收藏会返回是否收藏成功
-        if($_POST['type'] == "fav_time"){
-            echo $result;
+    public function actionUpdateIsFans(){
+        if(Yii::app()->request->isAjaxRequest){
+            $qqMember = new Qqmember();
+            $return = $qqMember->update_user_is_login();
+            echo $return;
         }
     }
 
